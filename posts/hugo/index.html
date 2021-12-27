@@ -7,7 +7,7 @@
 <title>Hugo - JDTech</title><meta name=description content="Hugo"><meta property="og:title" content="Hugo">
 <meta property="og:description" content="Hugo">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://jdtech.me/posts/hugo/"><meta property="article:section" content="posts">
+<meta property="og:url" content="https://hugo.technologify.net/posts/hugo/"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2021-12-27T22:41:38+11:00">
 <meta property="article:modified_time" content="2021-12-27T22:41:38+11:00">
 <meta name=twitter:card content="summary">
@@ -16,7 +16,7 @@
 <meta name=application-name content="JDTech">
 <meta name=apple-mobile-web-app-title content="JDTech"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://jdtech.me/posts/hugo/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Hugo","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/jdtech.me\/posts\/hugo\/"},"genre":"posts","wordcount":53,"url":"https:\/\/jdtech.me\/posts\/hugo\/","datePublished":"2021-12-27T22:41:38+11:00","dateModified":"2021-12-27T22:41:38+11:00","publisher":{"@type":"Organization","name":"JD"},"author":{"@type":"Person","name":"JD"},"description":"Hugo"}</script></head>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://hugo.technologify.net/posts/hugo/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Hugo","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/hugo.technologify.net\/posts\/hugo\/"},"genre":"posts","wordcount":185,"url":"https:\/\/hugo.technologify.net\/posts\/hugo\/","datePublished":"2021-12-27T22:41:38+11:00","dateModified":"2021-12-27T22:41:38+11:00","publisher":{"@type":"Organization","name":"JD"},"author":{"@type":"Person","name":"JD"},"description":"Hugo"}</script></head>
 <body header-desktop header-mobile><script type=text/javascript>('false'==='true'&&window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':''==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:''==='dark')&&document.body.setAttribute('theme','dark')</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
@@ -84,7 +84,7 @@ Cancel
 <div class=toc-content id=toc-content-auto></div>
 </div><article class="page single"><h1 class="single-title animated flipInX">Hugo</h1><div class=post-meta>
 <div class=post-meta-line><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw"></i>JD</a></span></div>
-<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2021-12-27>2021-12-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;53 words&nbsp;
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2021-12-27>2021-12-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;185 words&nbsp;
 <i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
 </div><div class="details toc" id=toc-static kept>
 <div class="details-summary toc-title">
@@ -93,22 +93,58 @@ Cancel
 </div>
 <div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents>
 <ul>
+<li><a href=#hugo-setup>Hugo Setup</a>
+<ul>
 <li><a href=#install-hugo>Install Hugo</a></li>
 <li><a href=#create-a-new-site>Create a new site</a></li>
+<li><a href=#install-a-theme>Install a theme</a></li>
 <li><a href=#configure-the-site>Configure the site</a></li>
-<li><a href=#build-the-site>Build the site</a></li>
+<li><a href=#create-a-new-post>Create a new post</a></li>
+<li><a href=#run-local-dev-server>Run Local Dev Server</a></li>
+</ul>
+</li>
+<li><a href=#deploy-to-github-pages>Deploy to Github Pages</a></li>
 </ul>
 </nav></div>
 </div><div class=content id=content><p>Like many others, I&rsquo;m sick of using Wordpress. I&rsquo;ve finally decided to switch to a static site using <a href=https://gohugo.io/ target=_blank rel="noopener noreferrer">Hugo</a>.</p>
-<h1 id=hugo-setup>Hugo Setup</h1>
-<h2 id=install-hugo>Install Hugo</h2>
+<h2 id=hugo-setup>Hugo Setup</h2>
+<h3 id=install-hugo>Install Hugo</h3>
 <p>I&rsquo;m using the <a href=https://github.com/sunt-programator/CodeIT target=_blank rel="noopener noreferrer">CodeIT</a> Hugo theme. This requires <a href=https://community.chocolatey.org/packages/hugo-extended target=_blank rel="noopener noreferrer">Hugo Extended</a>.</p>
 <p><strong>Installation via Chocolatey</strong></p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-powershell data-lang=powershell><span class=n>choco</span> <span class=n>install</span> <span class=nb>hugo-extended</span>
-</code></pre></div><h2 id=create-a-new-site>Create a new site</h2>
-<h2 id=configure-the-site>Configure the site</h2>
-<h2 id=build-the-site>Build the site</h2>
-<h1 id=deploy-to-github-pages>Deploy to Github Pages</h1>
+</code></pre></div><h3 id=create-a-new-site>Create a new site</h3>
+<p>Hugo will create a new site named <code>&lt;my-site></code></p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-powershell data-lang=powershell><span class=n>hugo</span> <span class=n>new</span> <span class=n>site</span> <span class=p>&lt;</span><span class=nb>my-site</span><span class=p>&gt;</span>
+</code></pre></div><h3 id=install-a-theme>Install a theme</h3>
+<p>I like the simplicity and aesthetics of the <a href=https://codeit.suntprogramator.dev/ target=_blank rel="noopener noreferrer">CodeIT</a> theme.</p>
+<p>Create a git repository and make the CodeIT repo a submodule of the side directory.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-powershell data-lang=powershell><span class=nb>cd </span><span class=p>&lt;</span><span class=nb>my-site</span><span class=p>&gt;</span>
+<span class=n>git</span> <span class=n>init</span>
+<span class=n>git</span> <span class=n>submodule</span> <span class=n>add</span> <span class=n>https</span><span class=err>:</span><span class=p>//</span><span class=n>github</span><span class=p>.</span><span class=n>com</span><span class=p>/</span><span class=nb>sunt-programator</span><span class=p>/</span><span class=n>CodeIT</span><span class=p>.</span><span class=n>git</span> <span class=n>themes</span><span class=p>/</span><span class=n>CodeIT</span>
+</code></pre></div><h3 id=configure-the-site>Configure the site</h3>
+<p>In the root of the site, Hugo will create a <a href=https://gohugo.io/getting-started/configuration/ target=_blank rel="noopener noreferrer"><code>config.toml</code></a> file. Here is an example:</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-markdown data-lang=markdown>contentDir = &#34;content&#34;
+layoutDir = &#34;layouts&#34;
+publishDir = &#34;public&#34;
+buildDrafts = false
+baseURL = &#34;https://yoursite.example.com/&#34;
+canonifyURLs = true
+title = &#34;My Hugo Site&#34;
+
+[taxonomies]
+  category = &#34;categories&#34;
+  tag = &#34;tags&#34;
+
+[params]
+  subtitle = &#34;Hugo is Absurdly Fast!&#34;
+  author = &#34;John Doe&#34;
+</code></pre></div><h3 id=create-a-new-post>Create a new post</h3>
+<p>Hugo will create a new post in the <code>content\posts</code> directory.</p>
+<p>All posts are formatted in Markdown.</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-powershell data-lang=powershell><span class=n>hugo</span> <span class=n>new</span> <span class=n>posts</span><span class=p>/</span><span class=nb>my-post</span><span class=p>.</span><span class=nb>md
+</span></code></pre></div><h3 id=run-local-dev-server>Run Local Dev Server</h3>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-powershell data-lang=powershell><span class=n>hugo</span> <span class=n>serve</span>
+</code></pre></div><h2 id=deploy-to-github-pages>Deploy to Github Pages</h2>
 </div><div class=post-footer id=post-footer>
 <div class=post-info>
 <div class=post-info-line>
@@ -120,7 +156,7 @@ Cancel
 <div class=post-info-line>
 <div class=post-info-md></div>
 <div class=post-info-share>
-<span><a href=javascript:void(0); title="Share on Twitter" data-sharer=twitter data-url=https://jdtech.me/posts/hugo/ data-title=Hugo><i class="fab fa-twitter fa-fw"></i></a></span>
+<span><a href=javascript:void(0); title="Share on Twitter" data-sharer=twitter data-url=https://hugo.technologify.net/posts/hugo/ data-title=Hugo><i class="fab fa-twitter fa-fw"></i></a></span>
 </div>
 </div>
 </div>
