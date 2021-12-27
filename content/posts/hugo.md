@@ -96,3 +96,7 @@ hugo serve
 ```
 
 ## Deploy to Github Pages
+Follow the [instructions](https://pages.github.com/) here to create a new Github Pages site.
+
+## Automate Deployment with Github Actions
+Follow the [instructions](https://gohugo.io/hosting-and-deployment/hosting-on-github/#build-hugo-with-github-action) here to set up a Github Action to build and deploy Hugo sites.
