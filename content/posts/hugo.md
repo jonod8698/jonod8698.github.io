@@ -35,7 +35,7 @@ Like many others, I'm sick of using Wordpress. I've finally decided to switch to
 
 I'm using the [CodeIT](https://github.com/sunt-programator/CodeIT) Hugo theme. This requires [Hugo Extended](https://community.chocolatey.org/packages/hugo-extended).
 
-**Installation via Chocolatey
+**Installation via Chocolatey**
 ```powershell
 choco install hugo-extended
 ```
