@@ -5,7 +5,7 @@ date: {{ .Date }}
 lastmod: {{ .Date }}
 draft: true
 
-author: "{{ .Author }}"
+author: "JD"
 authorLink: ""
 
 tags: []
