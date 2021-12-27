@@ -16,7 +16,7 @@
 <meta name=application-name content="JDTech">
 <meta name=apple-mobile-web-app-title content="JDTech"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://hugo.technologify.net/posts/hugo/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Hugo","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/hugo.technologify.net\/posts\/hugo\/"},"genre":"posts","wordcount":185,"url":"https:\/\/hugo.technologify.net\/posts\/hugo\/","datePublished":"2021-12-27T22:41:38+11:00","dateModified":"2021-12-27T22:41:38+11:00","publisher":{"@type":"Organization","name":"JD"},"author":{"@type":"Person","name":"JD"},"description":"Hugo"}</script></head>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://hugo.technologify.net/posts/hugo/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Hugo","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/hugo.technologify.net\/posts\/hugo\/"},"genre":"posts","wordcount":217,"url":"https:\/\/hugo.technologify.net\/posts\/hugo\/","datePublished":"2021-12-27T22:41:38+11:00","dateModified":"2021-12-27T22:41:38+11:00","publisher":{"@type":"Organization","name":"JD"},"author":{"@type":"Person","name":"JD"},"description":"Hugo"}</script></head>
 <body header-desktop header-mobile><script type=text/javascript>('false'==='true'&&window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':''==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:''==='dark')&&document.body.setAttribute('theme','dark')</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
@@ -84,8 +84,8 @@ Cancel
 <div class=toc-content id=toc-content-auto></div>
 </div><article class="page single"><h1 class="single-title animated flipInX">Hugo</h1><div class=post-meta>
 <div class=post-meta-line><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw"></i>JD</a></span></div>
-<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2021-12-27>2021-12-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;185 words&nbsp;
-<i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2021-12-27>2021-12-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;217 words&nbsp;
+<i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
 </div><div class="details toc" id=toc-static kept>
 <div class="details-summary toc-title">
 <span>Contents</span>
@@ -104,6 +104,7 @@ Cancel
 </ul>
 </li>
 <li><a href=#deploy-to-github-pages>Deploy to Github Pages</a></li>
+<li><a href=#automate-deployment-with-github-actions>Automate Deployment with Github Actions</a></li>
 </ul>
 </nav></div>
 </div><div class=content id=content><p>Like many others, I&rsquo;m sick of using Wordpress. I&rsquo;ve finally decided to switch to a static site using <a href=https://gohugo.io/ target=_blank rel="noopener noreferrer">Hugo</a>.</p>
@@ -145,6 +146,9 @@ title = &#34;My Hugo Site&#34;
 </span></code></pre></div><h3 id=run-local-dev-server>Run Local Dev Server</h3>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-powershell data-lang=powershell><span class=n>hugo</span> <span class=n>serve</span>
 </code></pre></div><h2 id=deploy-to-github-pages>Deploy to Github Pages</h2>
+<p>Follow the <a href=https://pages.github.com/ target=_blank rel="noopener noreferrer">instructions</a> here to create a new Github Pages site.</p>
+<h2 id=automate-deployment-with-github-actions>Automate Deployment with Github Actions</h2>
+<p>Follow the <a href=https://gohugo.io/hosting-and-deployment/hosting-on-github/#build-hugo-with-github-action target=_blank rel="noopener noreferrer">instructions</a> here to set up a Github Action to build and deploy Hugo sites.</p>
 </div><div class=post-footer id=post-footer>
 <div class=post-info>
 <div class=post-info-line>
