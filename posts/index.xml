@@ -1,5 +1,4 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><title>All Posts - JDTech</title><link>https://jdtech.me/posts/</link><description>All Posts | JDTech</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 27 Dec 2021 19:19:35 +1100</lastBuildDate><atom:link href="https://jdtech.me/posts/" rel="self" type="application/rss+xml"/><item><title>First_post</title><link>https://jdtech.me/posts/first_post/</link><pubDate>Mon, 27 Dec 2021 19:19:35 +1100</pubDate><guid>https://jdtech.me/posts/first_post/</guid><description>Yeah, buddy testing.
-asidhsad
-Testing 1 Testing
-Testing 1.1 Testing
-Testing 2 Testing hahaha</description></item></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><title>All Posts - JDTech</title><link>https://jdtech.me/posts/</link><description>All Posts | JDTech</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 27 Dec 2021 22:41:38 +1100</lastBuildDate><atom:link href="https://jdtech.me/posts/" rel="self" type="application/rss+xml"/><item><title>Hugo</title><link>https://jdtech.me/posts/hugo/</link><pubDate>Mon, 27 Dec 2021 22:41:38 +1100</pubDate><dc:creator>JD</dc:creator><guid>https://jdtech.me/posts/hugo/</guid><description>Like many others, I&amp;rsquo;m sick of using Wordpress. I&amp;rsquo;ve finally decided to switch to a static site using Hugo.
+Hugo Setup Install Hugo I&amp;rsquo;m using the CodeIT Hugo theme. This requires Hugo Extended.
+**Installation via Chocolatey
+choco install hugo-extended Create a new site Configure the site Build the site Deploy to Github Pages</description></item></channel></rss>
