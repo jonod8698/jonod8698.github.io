@@ -29,9 +29,9 @@ seo:
 
 Like many others, I'm sick of using Wordpress. I've finally decided to switch to a static site using [Hugo](https://gohugo.io/).
 
-# Hugo Setup
+## Hugo Setup
 
-## Install Hugo
+### Install Hugo
 
 I'm using the [CodeIT](https://github.com/sunt-programator/CodeIT) Hugo theme. This requires [Hugo Extended](https://community.chocolatey.org/packages/hugo-extended).
 
@@ -40,10 +40,59 @@ I'm using the [CodeIT](https://github.com/sunt-programator/CodeIT) Hugo theme. T
 choco install hugo-extended
 ```
 
-## Create a new site
+### Create a new site
 
-## Configure the site
+Hugo will create a new site named `<my-site>`
+```powershell
+hugo new site <my-site>
+```
 
-## Build the site
+### Install a theme
+I like the simplicity and aesthetics of the [CodeIT](https://codeit.suntprogramator.dev/) theme.
 
-# Deploy to Github Pages
+Create a git repository and make the CodeIT repo a submodule of the side directory.
+```powershell
+cd <my-site>
+git init
+git submodule add https://github.com/sunt-programator/CodeIT.git themes/CodeIT
+```
+
+### Configure the site
+
+
+
+In the root of the site, Hugo will create a [`config.toml`](https://gohugo.io/getting-started/configuration/) file. Here is an example:
+```markdown
+contentDir = "content"
+layoutDir = "layouts"
+publishDir = "public"
+buildDrafts = false
+baseURL = "https://yoursite.example.com/"
+canonifyURLs = true
+title = "My Hugo Site"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[params]
+  subtitle = "Hugo is Absurdly Fast!"
+  author = "John Doe"
+```
+### Create a new post
+
+Hugo will create a new post in the `content\posts` directory.
+
+All posts are formatted in Markdown.
+
+```powershell
+hugo new posts/my-post.md
+```
+
+### Run Local Dev Server
+
+```powershell
+hugo serve
+```
+
+## Deploy to Github Pages
