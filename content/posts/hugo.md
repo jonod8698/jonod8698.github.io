@@ -8,8 +8,8 @@ draft: false
 author: "JD"
 authorLink: ""
 
-tags: []
-categories: []
+tags: [knowledge-management,static-site]
+categories: [other]
 featuredImage: ""
 featuredImagePreview: ""
 

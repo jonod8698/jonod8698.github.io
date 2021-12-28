@@ -1,22 +1,21 @@
 ---
-title: "{{ replace .TranslationBaseName "-" " " | title }}"
-subtitle: ""
-description: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
-lastmod: {{ .Date }}
+title: "Obsidian"
+description: "Obsidian"
+date: 2021-12-28T10:37:27+11:00
+lastmod: 2021-12-28T10:37:27+11:00
 draft: true
 
 author: "JD"
 authorLink: ""
 
-tags: []
+tags: [knowledge-management,obsidian]
 categories: []
-
+featuredImage: ""
+featuredImagePreview: ""
 
 hiddenFromHomePage: false
 hiddenFromSearch: false
-featuredImage: ""
-featuredImagePreview: ""
+
 toc:
     enable: true
     auto: true
