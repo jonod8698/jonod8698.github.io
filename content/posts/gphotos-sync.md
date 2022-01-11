@@ -4,7 +4,7 @@ subtitle: ""
 description: "Gphotos Sync"
 date: 2021-12-29T00:32:38+11:00
 lastmod: 2021-12-29T00:32:38+11:00
-draft: false
+draft: true
 
 author: "JD"
 authorLink: ""
@@ -71,5 +71,3 @@ After the initial setup, a backup will be performed.
 ### Automating the backup (Synology NAS)
 
 Follow [here](https://bullyrooks.com/index.php/2021/02/02/backing-up-google-photos-to-your-synology-nas/)
-
-### Subtitle 2
