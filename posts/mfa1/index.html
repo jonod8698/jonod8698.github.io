@@ -16,7 +16,7 @@
 <meta name=application-name content="JDTech">
 <meta name=apple-mobile-web-app-title content="JDTech"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://hugo.technologify.net/posts/mfa1/><link rel=prev href=https://hugo.technologify.net/posts/hugo/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Multi-Factor Authentication via Conditional Access","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/hugo.technologify.net\/posts\/mfa1\/"},"genre":"posts","keywords":"AzureAD, Conditional Access, MFA","wordcount":290,"url":"https:\/\/hugo.technologify.net\/posts\/mfa1\/","datePublished":"2022-01-12T01:54:05+11:00","dateModified":"2022-01-12T01:54:05+11:00","publisher":{"@type":"Organization","name":"JD"},"author":{"@type":"Person","name":"JD"},"description":"MFA1"}</script></head>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://hugo.technologify.net/posts/mfa1/><link rel=prev href=https://hugo.technologify.net/posts/hugo/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Multi-Factor Authentication via Conditional Access","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/hugo.technologify.net\/posts\/mfa1\/"},"genre":"posts","keywords":"AzureAD, Conditional Access, MFA","wordcount":323,"url":"https:\/\/hugo.technologify.net\/posts\/mfa1\/","datePublished":"2022-01-12T01:54:05+11:00","dateModified":"2022-01-12T01:54:05+11:00","publisher":{"@type":"Organization","name":"JD"},"author":{"@type":"Person","name":"JD"},"description":"MFA1"}</script></head>
 <body header-desktop header-mobile><script type=text/javascript>('false'==='true'&&window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':''==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:''==='dark')&&document.body.setAttribute('theme','dark')</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
@@ -84,7 +84,7 @@ Cancel
 <div class=toc-content id=toc-content-auto></div>
 </div><article class="page single"><h1 class="single-title animated flipInX">Multi-Factor Authentication via Conditional Access</h1><div class=post-meta>
 <div class=post-meta-line><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw"></i>JD</a></span></div>
-<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2022-01-12>2022-01-12</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;290 words&nbsp;
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2022-01-12>2022-01-12</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;323 words&nbsp;
 <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
 </div><div class="details toc" id=toc-static kept>
 <div class="details-summary toc-title">
@@ -108,12 +108,7 @@ Cancel
 <li><a href=#51-per-user-mfa-enabledisable>5.1 Per User MFA Enable/Disable</a></li>
 <li><a href=#52-conditional-access-mfa>5.2 Conditional Access MFA</a></li>
 <li><a href=#53-modify-authentication-methods>5.3 Modify Authentication Methods</a></li>
-</ul>
-</li>
-<li><a href=#faq>FAQ</a>
-<ul>
-<li><a href=#can-per-user-mfa-and-conditional-mfa-be-used-together>Can Per-user MFA and Conditional MFA be used together?</a></li>
-<li><a href=#converting-from-per-user-mfa-to-conditional-access-mfa>Converting from Per-User MFA to Conditional Access MFA</a></li>
+<li><a href=#54-module-to-export-mfa-status-to-csv>5.4 Module to export MFA status to CSV</a></li>
 </ul>
 </li>
 </ul>
@@ -179,11 +174,9 @@ Cancel
 <h3 id=51-per-user-mfa-enabledisable>5.1 Per User MFA Enable/Disable</h3>
 <p><a href="https://docs.microsoft.com/en-us/powershell/azure/active-directory/install-msonlinev1?view=azureadps-1.0" target=_blank rel="noopener noreferrer">Install Instructions</a></p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-powershell data-lang=powershell><span class=c>#Requires -Modules MSOnline</span>
-<span class=nv>$Msolcred</span> <span class=p>=</span> <span class=nb>Get-credential</span>
-<span class=nb>Connect-MsolService</span> <span class=n>-Credential</span> <span class=nv>$MsolCred</span>
+<span class=nb>Connect-MsolService</span>
 
 <span class=nb>Get-MsolUser</span> <span class=p>|</span> <span class=nb>Select-Object</span> <span class=n>UserPrincipalName</span><span class=p>,</span><span class=n>StrongAuthenticationMethods</span><span class=p>,</span><span class=n>StrongAuthenticationRequirements</span> <span class=p>|</span> <span class=nb>Format-Table</span> <span class=n>-AutoSize</span>
-
 </code></pre></div><p>Links
 <a href=https://www.adaxes.com/script-repository/status-of-users-mfa-in-microsoft-365-s601.htm target=_blank rel="noopener noreferrer">https://www.adaxes.com/script-repository/status-of-users-mfa-in-microsoft-365-s601.htm</a></p>
 <p><a href=https://www.adaxes.com/script-repository/check-multi-factor-authentication-status-for-a-user-in-office-365-s556.htm target=_blank rel="noopener noreferrer">https://www.adaxes.com/script-repository/check-multi-factor-authentication-status-for-a-user-in-office-365-s556.htm</a></p>
@@ -193,10 +186,22 @@ Cancel
 <h4 id=531-re-register-mfa>5.3.1 Re-register MFA</h4>
 <h4 id=532-revoke-mfa>5.3.2 Revoke MFA</h4>
 <h4 id=533-add-phone-number>5.3.3 Add Phone Number</h4>
-<h2 id=faq>FAQ</h2>
-<h3 id=can-per-user-mfa-and-conditional-mfa-be-used-together>Can Per-user MFA and Conditional MFA be used together?</h3>
-<h3 id=converting-from-per-user-mfa-to-conditional-access-mfa>Converting from Per-User MFA to Conditional Access MFA</h3>
-</div><div class=post-footer id=post-footer>
+<h3 id=54-module-to-export-mfa-status-to-csv>5.4 Module to export MFA status to CSV</h3>
+<p>See <a href=https://lazyadmin.nl/powershell/list-office365-mfa-status-powershell/ target=_blank rel="noopener noreferrer">LazyAdmin</a></p>
+<h4 id=541-export-mfa-status-to-csv>5.4.1 Export MFA status to CSV</h4>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-powershell data-lang=powershell><span class=c>#Requires -Modules MSOnline</span>
+<span class=nb>Connect-MsolService</span>
+<span class=p>.\</span><span class=n>MFAStatus</span><span class=p>.</span><span class=n>ps1</span>  <span class=p>|</span> <span class=nb>Export-CSV</span> <span class=n>c:</span><span class=p>\</span><span class=n>temp</span><span class=p>\</span><span class=n>UserMFAStatus</span><span class=p>.</span><span class=n>csv</span> <span class=n>-noTypeInformation</span>
+</code></pre></div><h4 id=543-filter-for-users-by-attributes>5.4.3 Filter for users by attributes</h4>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-powershell data-lang=powershell><span class=c>#Requires -Modules MSOnline</span>
+<span class=nb>Connect-MsolService</span>
+
+
+<span class=c>## FAQ</span>
+
+<span class=c>### Can Per-user MFA and Conditional MFA be used together?</span>
+
+<span class=c>### Converting from Per-User MFA to Conditional Access MFA</span></code></pre></div></div><div class=post-footer id=post-footer>
 <div class=post-info>
 <div class=post-info-line>
 <div class=post-info-mod>
