@@ -16,7 +16,7 @@
 <meta name=application-name content="JDTech">
 <meta name=apple-mobile-web-app-title content="JDTech"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://hugo.technologify.net/posts/mfa1/><link rel=prev href=https://hugo.technologify.net/posts/hugo/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Multi-Factor Authentication via Conditional Access","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/hugo.technologify.net\/posts\/mfa1\/"},"genre":"posts","keywords":"AzureAD, Conditional Access, MFA","wordcount":286,"url":"https:\/\/hugo.technologify.net\/posts\/mfa1\/","datePublished":"2022-01-12T01:54:05+11:00","dateModified":"2022-01-12T01:54:05+11:00","publisher":{"@type":"Organization","name":"JD"},"author":{"@type":"Person","name":"JD"},"description":"MFA1"}</script></head>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://hugo.technologify.net/posts/mfa1/><link rel=prev href=https://hugo.technologify.net/posts/hugo/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Multi-Factor Authentication via Conditional Access","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/hugo.technologify.net\/posts\/mfa1\/"},"genre":"posts","keywords":"AzureAD, Conditional Access, MFA","wordcount":290,"url":"https:\/\/hugo.technologify.net\/posts\/mfa1\/","datePublished":"2022-01-12T01:54:05+11:00","dateModified":"2022-01-12T01:54:05+11:00","publisher":{"@type":"Organization","name":"JD"},"author":{"@type":"Person","name":"JD"},"description":"MFA1"}</script></head>
 <body header-desktop header-mobile><script type=text/javascript>('false'==='true'&&window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':''==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:''==='dark')&&document.body.setAttribute('theme','dark')</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
@@ -84,7 +84,7 @@ Cancel
 <div class=toc-content id=toc-content-auto></div>
 </div><article class="page single"><h1 class="single-title animated flipInX">Multi-Factor Authentication via Conditional Access</h1><div class=post-meta>
 <div class=post-meta-line><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw"></i>JD</a></span></div>
-<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2022-01-12>2022-01-12</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;286 words&nbsp;
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2022-01-12>2022-01-12</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;290 words&nbsp;
 <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
 </div><div class="details toc" id=toc-static kept>
 <div class="details-summary toc-title">
@@ -184,7 +184,11 @@ Cancel
 
 <span class=nb>Get-MsolUser</span> <span class=p>|</span> <span class=nb>Select-Object</span> <span class=n>UserPrincipalName</span><span class=p>,</span><span class=n>StrongAuthenticationMethods</span><span class=p>,</span><span class=n>StrongAuthenticationRequirements</span> <span class=p>|</span> <span class=nb>Format-Table</span> <span class=n>-AutoSize</span>
 
-</code></pre></div><h3 id=52-conditional-access-mfa>5.2 Conditional Access MFA</h3>
+</code></pre></div><p>Links
+<a href=https://www.adaxes.com/script-repository/status-of-users-mfa-in-microsoft-365-s601.htm target=_blank rel="noopener noreferrer">https://www.adaxes.com/script-repository/status-of-users-mfa-in-microsoft-365-s601.htm</a></p>
+<p><a href=https://www.adaxes.com/script-repository/check-multi-factor-authentication-status-for-a-user-in-office-365-s556.htm target=_blank rel="noopener noreferrer">https://www.adaxes.com/script-repository/check-multi-factor-authentication-status-for-a-user-in-office-365-s556.htm</a></p>
+<p><a href=https://www.adaxes.com/script-repository/enabledisable-multi-factor-authentication-for-a-user-in-office-365-s544.htm target=_blank rel="noopener noreferrer">https://www.adaxes.com/script-repository/enabledisable-multi-factor-authentication-for-a-user-in-office-365-s544.htm</a></p>
+<h3 id=52-conditional-access-mfa>5.2 Conditional Access MFA</h3>
 <h3 id=53-modify-authentication-methods>5.3 Modify Authentication Methods</h3>
 <h4 id=531-re-register-mfa>5.3.1 Re-register MFA</h4>
 <h4 id=532-revoke-mfa>5.3.2 Revoke MFA</h4>
