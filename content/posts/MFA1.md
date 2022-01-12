@@ -97,6 +97,13 @@ Get-MsolUser | Select-Object UserPrincipalName,StrongAuthenticationMethods,Stron
 
 ```
 
+Links
+https://www.adaxes.com/script-repository/status-of-users-mfa-in-microsoft-365-s601.htm
+
+https://www.adaxes.com/script-repository/check-multi-factor-authentication-status-for-a-user-in-office-365-s556.htm
+
+https://www.adaxes.com/script-repository/enabledisable-multi-factor-authentication-for-a-user-in-office-365-s544.htm
+
 ### 5.2 Conditional Access MFA
 
 ### 5.3 Modify Authentication Methods
