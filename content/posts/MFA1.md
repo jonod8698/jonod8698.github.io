@@ -90,11 +90,9 @@ Per-User MFA is the legacy PhoneFactor portal. It does not allow for Azure AD RB
 
 ```powershell
 #Requires -Modules MSOnline
-$Msolcred = Get-credential
-Connect-MsolService -Credential $MsolCred
+Connect-MsolService
 
 Get-MsolUser | Select-Object UserPrincipalName,StrongAuthenticationMethods,StrongAuthenticationRequirements | Format-Table -AutoSize
-
 ```
 
 Links
@@ -113,6 +111,24 @@ https://www.adaxes.com/script-repository/enabledisable-multi-factor-authenticati
 #### 5.3.2 Revoke MFA
 
 #### 5.3.3 Add Phone Number
+
+### 5.4 Module to export MFA status to CSV
+
+See [LazyAdmin](https://lazyadmin.nl/powershell/list-office365-mfa-status-powershell/)
+
+
+#### 5.4.1 Export MFA status to CSV
+```powershell
+#Requires -Modules MSOnline
+Connect-MsolService
+.\MFAStatus.ps1  | Export-CSV c:\temp\UserMFAStatus.csv -noTypeInformation
+```
+
+#### 5.4.3 Filter for users by attributes 
+
+```powershell
+#Requires -Modules MSOnline
+Connect-MsolService
 
 
 ## FAQ
