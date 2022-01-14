@@ -1,6 +1,6 @@
 <!doctype html><html lang=en>
 <head>
-<meta name=generator content="Hugo 0.91.2">
+<meta name=generator content="Hugo 0.92.0">
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=robots content="noodp">
@@ -81,6 +81,10 @@ Cancel
 <main class=main>
 <div class=container><div class="page home" posts><div class=home-profile></div>
 <article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
+<a href=/posts/domainjoin/>Domainjoin</a>
+</h1><div class=post-meta><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw"></i>JD</a></span>&nbsp;<span class=post-publish>published on <time datetime=2022-01-14>2022-01-14</time></span></div><div class=content>Write-Host "Please enter your desired computer name: [Default $env:computername]:" $computername = Read-Host $renamecomputer = $true if ($computername -eq "" -or $computername -eq $env:computername) { $computername = $env:computername; $renamecomputer = $false } $ou = "OU=Computers,OU=Domain Controllers,DC=domain,DC=local" $credentials = New-Object System.Management.Automation.PsCredential("yourdomain\useraccountwithjoinpermissions", (ConvertTo-SecureString "useraccountpassword" -AsPlainText -Force)) Write-Host "Adding $computername to the domain" Add-Computer -DomainName "your.domain.here" -Credential $credentials -OUPath $ou if ($renamecomputer -eq $true) { Rename-Computer -NewName $computername -DomainCredential $credentials -Force } Restart-Computer </div><div class=post-footer>
+<a href=/posts/domainjoin/>Read More</a></div>
+</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
 <a href=/posts/mfa1/>Multi-Factor Authentication via Conditional Access</a>
 </h1><div class=post-meta><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw"></i>JD</a></span>&nbsp;<span class=post-publish>published on <time datetime=2022-01-12>2022-01-12</time></span></div><div class=content>1. Introduction If your users have Azure AD P1, Microsoft strongly recommends switching from Per-User MFA to Condtional Access for several reasons:
 Improved User Experience Granular Access Control Delegated Control to Helpdesk 2. Why use Conditional Access to apply MFA? 2.1 Improved User Experience Conditional Access allows for less MFA prompts
