@@ -81,6 +81,12 @@ Cancel
 <main class=main>
 <div class=container><div class="page home" posts><div class=home-profile></div>
 <article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
+<a href=/posts/tpot/>Creating a Honeypot with T-Pot</a>
+</h1><div class=post-meta><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw"></i>JD</a></span>&nbsp;<span class=post-publish>published on <time datetime=2022-01-16>2022-01-16</time></span></div><div class=content>Summary Tpotce is an all-in-one honeypot platform with a collection of honeypots and tools for monitoring them.
+Requirements 8GB RAM 128GB Disk Space Unfiltered Internet Access Isolated Subnet Promiscious Mode Enabled for fatt, suricata and p0f to work properly Port forward or NAT to the honeypot Installation Set up is simple as the ISO is prebuilt.
+Download the latest ISO from Tpotce releases Mount the ISO to a VM and run through the installer.</div><div class=post-footer>
+<a href=/posts/tpot/>Read More</a></div>
+</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
 <a href=/posts/domainjoin/>Domainjoin</a>
 </h1><div class=post-meta><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw"></i>JD</a></span>&nbsp;<span class=post-publish>published on <time datetime=2022-01-14>2022-01-14</time></span></div><div class=content>Write-Host "Please enter your desired computer name: [Default $env:computername]:" $computername = Read-Host $renamecomputer = $true if ($computername -eq "" -or $computername -eq $env:computername) { $computername = $env:computername; $renamecomputer = $false } $ou = "OU=Computers,OU=Domain Controllers,DC=domain,DC=local" $credentials = New-Object System.Management.Automation.PsCredential("yourdomain\useraccountwithjoinpermissions", (ConvertTo-SecureString "useraccountpassword" -AsPlainText -Force)) Write-Host "Adding $computername to the domain" Add-Computer -DomainName "your.domain.here" -Credential $credentials -OUPath $ou if ($renamecomputer -eq $true) { Rename-Computer -NewName $computername -DomainCredential $credentials -Force } Restart-Computer </div><div class=post-footer>
 <a href=/posts/domainjoin/>Read More</a></div>
