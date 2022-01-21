@@ -73,6 +73,10 @@ hashcat -m 1000 -a 0 -o cracked.txt hashes.txt /usr/share/wordlists/rockyou.txt 
 
 5. At the end you can use this awesome tool: [Domain Password Audit Tool (DPAT)](https://github.com/clr2of8/DPAT) created by Carrie Roberts to summarise the results in a neat HTML report.
 
+```bash
+python3 ./dpat.py -n hashes.txt -c hashcat.potfile -o report.html
+```
+
 Using a Kali VM on my laptop I managed to crack 50% of our organisation’s passwords! You wouldn’t believe how many people had passwords like <Season><Year> and <company name><number>. It was definitely a worthwhile exercise and was an eye-opener for management.
 
 ![AD Passwords](/ad-password-audit-DPAT.png)
