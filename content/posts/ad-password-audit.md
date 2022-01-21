@@ -43,7 +43,7 @@ So, what can we as IT professionals do to reduce bad passwords and mitigate thei
 - Password managers – addresses credential reuse and allows for password auditing. I will revisit password managers in another article.
 
 ## How to Remediate: Password Auditing
-One very effective way of assessing the current state of passwords in your organisation is to dump the ntds.dat file and run it against common password lists and masks. Note: depending on your org, this may not be allowed as dumping the ntds.dat file containing all user hashes is risky as if an attacker accesses it, they can guess passwords offline.
+One very effective way of assessing the current state of passwords in your organisation is to dump the ntds.dit file and run it against common password lists and masks. Note: depending on your org, this may not be allowed as dumping the ntds.dit file containing all user hashes is risky as if an attacker accesses it, they can guess passwords offline.
 
 1. On a domain controller with an elevated Command Prompt run:
 
@@ -53,7 +53,7 @@ ntdsutil "ac in ntds" "ifm" "cr fu c:temp" q q
 
 Files will be located in C:\Windows\System32\temp
 
-2. Copy the ntds.dat file to another computer with hashcat installed.
+2. Copy the ntds.dit file to another computer with hashcat installed.
 
 3. Extract the NTLMv2 hashes from the ntds.dat file.
 
