@@ -81,25 +81,33 @@ Cancel
 <main class=main>
 <div class=container><div class="page home" posts><div class=home-profile></div>
 <article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
+<a href=/posts/stormspotter/>Stormspotter</a>
+</h1><div class=post-meta><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw"></i>JD</a></span>&nbsp;<span class=post-publish>published on <time datetime=2022-01-25>2022-01-25</time></span></div><div class=content>Introduction Stomspotter is an Azure Red Team tool to graph Azure and Azure AD objects.
+By mapping out relationships between objects, Stormspotter visualises the attack paths between Azure objects.
+Requirements Docker Docker Compose Python 3.8.X Az PowerShell Installation Installation via Docker to avoid manual installation of dependencies.
+The docker-compose file creates three containers:
+Frontend Backend Neo4j git clone https://github.com/Azure/Stormspotter cd Stormspotter docker-compose up -d Stormspotter Frontend will expose a WebUI on port 9091.</div><div class=post-footer>
+<a href=/posts/stormspotter/>Read More</a></div>
+</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
+<a href=/posts/osdcloud/>OSDCloud</a>
+</h1><div class=post-meta><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw"></i>JD</a></span>&nbsp;<span class=post-publish>published on <time datetime=2022-01-24>2022-01-24</time></span></div><div class=content>Introduction OSDCloud is something I&rsquo;ve always seen recommended by various people I follow on Twitter. It&rsquo;s a way to deploy a Windows 10 Image to a bare-metal device without any additional infrastructure.
+Additional Features include: Requirements https://www.osdeploy.com/blog/2021/osdcloud#requirements
+Windows 10 x64 Windows ADK Deployment WinPE (Separate installer) OSDCloud Setup install-module osd -force Check Version of OSD
+Get-InstalledModule -Name OSD Get OSDHelp
+OSDHelp OSDCloudSetup Navigate to OSDCloudSetup/Quick Setup.</div><div class=post-footer>
+<a href=/posts/osdcloud/>Read More</a></div>
+</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
 <a href=/posts/ad-password-audit/>AD Password Audit</a>
-</h1><div class=post-meta><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw"></i>JD</a></span>&nbsp;<span class=post-publish>published on <time datetime=2022-01-21>2022-01-21</time></span></div><div class=content>Problem Statement Accounts with bad passwords, especially accounts with privileged access are the Achilles heel of an organisation’s security. Traditionally IT has tried to impose “strong password policies” such as “Choose a password with an uppercase letter, a number, a symbol and more than 10 characters”. However, a password like “Summer2020!” satisfies ALL those requirements despite being an immesurably weak password.
+</h1><div class=post-meta><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw"></i>JD</a></span>&nbsp;<span class=post-publish>published on <time datetime=2022-01-21>2022-01-21</time></span>&nbsp;<span class=post-category>included in <a href=/categories/security/><i class="far fa-folder fa-fw"></i>Security</a></span></div><div class=content>Problem Statement Accounts with bad passwords, especially accounts with privileged access are the Achilles heel of an organisation’s security. Traditionally IT has tried to impose “strong password policies” such as “Choose a password with an uppercase letter, a number, a symbol and more than 10 characters”. However, a password like “Summer2020!” satisfies ALL those requirements despite being an immesurably weak password.
 So, what can we as IT professionals do to reduce bad passwords and mitigate their impact?</div><div class=post-footer>
-<a href=/posts/ad-password-audit/>Read More</a></div>
+<a href=/posts/ad-password-audit/>Read More</a><div class=post-tags>
+<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/ad/>AD</a>,&nbsp;<a href=/tags/identity/>Identity</a></div></div>
 </article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
 <a href=/posts/tpot/>Creating a Honeypot with T-Pot</a>
 </h1><div class=post-meta><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw"></i>JD</a></span>&nbsp;<span class=post-publish>published on <time datetime=2022-01-16>2022-01-16</time></span></div><div class=content>Summary Tpotce is an all-in-one honeypot platform with a collection of honeypots and tools for monitoring them.
 Requirements 8GB RAM 128GB Disk Space Unfiltered Internet Access Isolated Subnet Promiscious Mode Enabled for fatt, suricata and p0f to work properly Port forward or NAT to the honeypot Installation Set up is simple as the ISO is prebuilt.
 Download the latest ISO from Tpotce releases Mount the ISO to a VM and run through the installer.</div><div class=post-footer>
 <a href=/posts/tpot/>Read More</a></div>
-</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
-<a href=/posts/mfa1/>Multi-Factor Authentication via Conditional Access</a>
-</h1><div class=post-meta><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw"></i>JD</a></span>&nbsp;<span class=post-publish>published on <time datetime=2022-01-12>2022-01-12</time></span></div><div class=content>1. Introduction If your users have Azure AD P1, Microsoft strongly recommends switching from Per-User MFA to Condtional Access for several reasons:
-Improved User Experience Granular Access Control Delegated Control to Helpdesk 2. Why use Conditional Access to apply MFA? 2.1 Improved User Experience Conditional Access allows for less MFA prompts
-https://dirteam.com/sander/2020/06/17/todo-move-from-the-allow-users-to-remember-multi-factor-authentication-on-devices-they-trust-option-to-conditional-access/
-https://docs.microsoft.com/en-us/azure/active-directory/authentication/concepts-azure-multi-factor-authentication-prompts-session-lifetime
-2.2 Granular Access Control Per-User MFA can be turned on or off with no granularity outside of IP range exclusions.</div><div class=post-footer>
-<a href=/posts/mfa1/>Read More</a><div class=post-tags>
-<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/azuread/>AzureAD</a>,&nbsp;<a href=/tags/conditional-access/>Conditional Access</a>,&nbsp;<a href=/tags/mfa/>MFA</a></div></div>
 </article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
 <a href=/posts/hugo/>Hugo</a>
 </h1><div class=post-meta><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw"></i>JD</a></span>&nbsp;<span class=post-publish>published on <time datetime=2021-12-27>2021-12-27</time></span>&nbsp;<span class=post-category>included in <a href=/categories/other/><i class="far fa-folder fa-fw"></i>other</a></span></div><div class=content>Like many others, I&rsquo;m sick of using Wordpress. I&rsquo;ve finally decided to switch to a static site using Hugo.
