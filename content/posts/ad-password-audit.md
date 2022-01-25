@@ -9,8 +9,8 @@ draft: false
 author: "JD"
 authorLink: ""
 
-tags: []
-categories: []
+tags: [AD,Identity]
+categories: [Security]
 
 
 hiddenFromHomePage: false
@@ -41,6 +41,7 @@ So, what can we as IT professionals do to reduce bad passwords and mitigate thei
 - Encourage users to use passphrases. Yes, I do know that passphrases are weak against dictionary attacks, but much like online games, effective strategies change with the “meta” – the current state of the game. At the moment, as most organisations have password policies which encourage 8 character passwords with special characters and numbers, that’s what attackers are expecting.
 - Reduce the ways attacks can obtain NTLMv2 hashes for offline cracking. I.e. disable LLNMR and NBT-NS, block port 445 egress, don’t use domain admin accounts to login to user workstations, enable windows credential guard, minimise use of office macros.
 - Password managers – addresses credential reuse and allows for password auditing. I will revisit password managers in another article.
+- Implement Password Policies through technical controls and company policies. [Lithnet Password Protection](https://github.com/lithnet/ad-password-protection) and [Azure AD Password Protection](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-password-ban-bad-on-premises) are both great solutions.
 
 ## How to Remediate: Password Auditing
 One very effective way of assessing the current state of passwords in your organisation is to dump the ntds.dit file and run it against common password lists and masks. Note: depending on your org, this may not be allowed as dumping the ntds.dit file containing all user hashes is risky as if an attacker accesses it, they can guess passwords offline.
@@ -69,6 +70,11 @@ python3 /opt/impacket/examples/secretsdump.py -system registry/SYSTEM -ntds "Act
 ```bash
 sudo gzip -d /usr/share/wordlists/rockyou.txt.gz
 hashcat -m 1000 -a 0 -o cracked.txt hashes.txt /usr/share/wordlists/rockyou.txt -r /usr/share/hashcat/rules/dive.rule –force
+```
+
+Windows
+```powershell
+.\hashcat.exe -m 1000 -a 0 -o .\cracked.txt .\hashes.txt .\rockyou.txt -r .\dive.rule -O
 ```
 
 5. At the end you can use this awesome tool: [Domain Password Audit Tool (DPAT)](https://github.com/clr2of8/DPAT) created by Carrie Roberts to summarise the results in a neat HTML report.

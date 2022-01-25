@@ -9,8 +9,8 @@ draft: true
 author: "JD"
 authorLink: ""
 
-tags: []
-categories: []
+tags: [Homelab,Backup]
+categories: [Homelab]
 
 
 hiddenFromHomePage: false

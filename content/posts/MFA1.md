@@ -4,13 +4,13 @@ subtitle: ""
 description: "MFA1"
 date: 2022-01-12T01:54:05+11:00
 lastmod: 2022-01-12T01:54:05+11:00
-draft: false
+draft: true
 
 author: "JD"
 authorLink: ""
 
 tags: [AzureAD, Conditional Access, MFA]
-categories: []
+categories: [Security]
 
 
 hiddenFromHomePage: false
