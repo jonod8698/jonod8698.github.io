@@ -16,7 +16,7 @@
 <meta name=application-name content="JDTech">
 <meta name=apple-mobile-web-app-title content="JDTech"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://hugo.technologify.net/posts/ad-password-audit/><link rel=prev href=https://hugo.technologify.net/posts/tpot/><link rel=next href=https://hugo.technologify.net/posts/osdcloud/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"AD Password Audit","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/hugo.technologify.net\/posts\/ad-password-audit\/"},"genre":"posts","keywords":"AD, Identity","wordcount":559,"url":"https:\/\/hugo.technologify.net\/posts\/ad-password-audit\/","datePublished":"2022-01-21T21:48:57+11:00","dateModified":"2022-01-21T21:48:57+11:00","publisher":{"@type":"Organization","name":"JD"},"author":{"@type":"Person","name":"JD"},"description":"Ad Password Audit"}</script></head>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://hugo.technologify.net/posts/ad-password-audit/><link rel=prev href=https://hugo.technologify.net/posts/tpot/><link rel=next href=https://hugo.technologify.net/posts/stormspotter/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"AD Password Audit","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/hugo.technologify.net\/posts\/ad-password-audit\/"},"genre":"posts","keywords":"AD, Identity","wordcount":561,"url":"https:\/\/hugo.technologify.net\/posts\/ad-password-audit\/","datePublished":"2022-01-21T21:48:57+11:00","dateModified":"2022-01-21T21:48:57+11:00","publisher":{"@type":"Organization","name":"JD"},"author":{"@type":"Person","name":"JD"},"description":"Ad Password Audit"}</script></head>
 <body header-desktop header-mobile><script type=text/javascript>('false'==='true'&&window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':''==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:''==='dark')&&document.body.setAttribute('theme','dark')</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
@@ -81,7 +81,7 @@ Cancel
 <main class=main>
 <div class=container><article class="page single"><h1 class="single-title animated flipInX">AD Password Audit</h1><div class=post-meta>
 <div class=post-meta-line><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw"></i>JD</a></span>&nbsp;<span class=post-category>included in <a href=/categories/security/><i class="far fa-folder fa-fw"></i>Security</a></span></div>
-<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2022-01-21>2022-01-21</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;559 words&nbsp;
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2022-01-21>2022-01-21</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;561 words&nbsp;
 <i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
 </div><div class=content id=content><h2 id=problem-statement>Problem Statement</h2>
 <p>Accounts with bad passwords, especially accounts with privileged access are the Achilles heel of an organisation’s security. Traditionally IT has tried to impose “strong password policies” such as “Choose a password with an uppercase letter, a number, a symbol and more than 10 characters”. However, a password like “Summer2020!” satisfies ALL those requirements despite being an immesurably weak password.</p>
@@ -128,7 +128,7 @@ hashcat -m <span class=m>1000</span> -a <span class=m>0</span> -o cracked.txt ha
 <li>At the end you can use this awesome tool: <a href=https://github.com/clr2of8/DPAT target=_blank rel="noopener noreferrer">Domain Password Audit Tool (DPAT)</a> created by Carrie Roberts to summarise the results in a neat HTML report.</li>
 </ol>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>python3 ./dpat.py -n hashes.txt -c hashcat.potfile -o report.html
-</code></pre></div><p>Using a Kali VM on my laptop I managed to crack 50% of our organisation’s passwords! You wouldn’t believe how many people had passwords like and . It was definitely a worthwhile exercise and was an eye-opener for management.</p>
+</code></pre></div><p>Using a Kali VM on my laptop I managed to crack 50% of our organisation’s passwords! You wouldn’t believe how many people had passwords like <code>&lt;Season>&lt;Year></code> and <code>&lt;company name>&lt;number></code>. It was definitely a worthwhile exercise and was an eye-opener for management.</p>
 <p><img class=lazyload src=/svg/loading.min.svg data-src=/ad-password-audit-DPAT.png data-srcset="/ad-password-audit-DPAT.png, /ad-password-audit-DPAT.png 1.5x, /ad-password-audit-DPAT.png 2x" data-sizes=auto alt=/ad-password-audit-DPAT.png title="AD Passwords"></p>
 </div><div class=post-footer id=post-footer>
 <div class=post-info>
@@ -152,7 +152,7 @@ hashcat -m <span class=m>1000</span> -a <span class=m>0</span> -o cracked.txt ha
 </section>
 </div>
 <div class=post-nav><a href=/posts/tpot/ class=prev rel=prev title="Creating a Honeypot with T-Pot"><i class="fas fa-angle-left fa-fw"></i>Creating a Honeypot with T-Pot</a>
-<a href=/posts/osdcloud/ class=next rel=next title=OSDCloud>OSDCloud<i class="fas fa-angle-right fa-fw"></i></a></div>
+<a href=/posts/stormspotter/ class=next rel=next title=Stormspotter>Stormspotter<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 <div id=comments><div id=disqus_thread class=comment></div><noscript>
 Please enable JavaScript to view the comments powered by <a href=https://disqus.com/?ref_noscript>Disqus</a>.

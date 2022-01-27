@@ -84,18 +84,11 @@ Cancel
 <a href=/posts/stormspotter/>Stormspotter</a>
 </h1><div class=post-meta><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw"></i>JD</a></span>&nbsp;<span class=post-publish>published on <time datetime=2022-01-25>2022-01-25</time></span></div><div class=content>Introduction Stomspotter is an Azure Red Team tool to graph Azure and Azure AD objects.
 By mapping out relationships between objects, Stormspotter visualises the attack paths between Azure objects.
+Warning Stormspotter currently only supports Neo4j 3.x.x.
+I recommend setting image: neo4j:3.5.18 in your docker-compose.yml
 Requirements Docker Docker Compose Python 3.8.X Az PowerShell Installation Installation via Docker to avoid manual installation of dependencies.
-The docker-compose file creates three containers:
-Frontend Backend Neo4j git clone https://github.com/Azure/Stormspotter cd Stormspotter docker-compose up -d Stormspotter Frontend will expose a WebUI on port 9091.</div><div class=post-footer>
+The docker-compose file creates three containers:</div><div class=post-footer>
 <a href=/posts/stormspotter/>Read More</a></div>
-</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
-<a href=/posts/osdcloud/>OSDCloud</a>
-</h1><div class=post-meta><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw"></i>JD</a></span>&nbsp;<span class=post-publish>published on <time datetime=2022-01-24>2022-01-24</time></span></div><div class=content>Introduction OSDCloud is something I&rsquo;ve always seen recommended by various people I follow on Twitter. It&rsquo;s a way to deploy a Windows 10 Image to a bare-metal device without any additional infrastructure.
-Additional Features include: Requirements https://www.osdeploy.com/blog/2021/osdcloud#requirements
-Windows 10 x64 Windows ADK Deployment WinPE (Separate installer) OSDCloud Setup install-module osd -force Check Version of OSD
-Get-InstalledModule -Name OSD Get OSDHelp
-OSDHelp OSDCloudSetup Navigate to OSDCloudSetup/Quick Setup.</div><div class=post-footer>
-<a href=/posts/osdcloud/>Read More</a></div>
 </article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
 <a href=/posts/ad-password-audit/>AD Password Audit</a>
 </h1><div class=post-meta><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw"></i>JD</a></span>&nbsp;<span class=post-publish>published on <time datetime=2022-01-21>2022-01-21</time></span>&nbsp;<span class=post-category>included in <a href=/categories/security/><i class="far fa-folder fa-fw"></i>Security</a></span></div><div class=content>Problem Statement Accounts with bad passwords, especially accounts with privileged access are the Achilles heel of an organisation’s security. Traditionally IT has tried to impose “strong password policies” such as “Choose a password with an uppercase letter, a number, a symbol and more than 10 characters”. However, a password like “Summer2020!” satisfies ALL those requirements despite being an immesurably weak password.

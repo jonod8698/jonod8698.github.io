@@ -16,7 +16,7 @@
 <meta name=application-name content="JDTech">
 <meta name=apple-mobile-web-app-title content="JDTech"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://hugo.technologify.net/posts/stormspotter/><link rel=prev href=https://hugo.technologify.net/posts/osdcloud/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Stormspotter","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/hugo.technologify.net\/posts\/stormspotter\/"},"genre":"posts","wordcount":149,"url":"https:\/\/hugo.technologify.net\/posts\/stormspotter\/","datePublished":"2022-01-25T11:15:22+11:00","dateModified":"2022-01-25T11:15:22+11:00","publisher":{"@type":"Organization","name":"JD"},"author":{"@type":"Person","name":"JD"},"description":"Stormspotter"}</script></head>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://hugo.technologify.net/posts/stormspotter/><link rel=prev href=https://hugo.technologify.net/posts/ad-password-audit/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Stormspotter","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/hugo.technologify.net\/posts\/stormspotter\/"},"genre":"posts","wordcount":164,"url":"https:\/\/hugo.technologify.net\/posts\/stormspotter\/","datePublished":"2022-01-25T11:15:22+11:00","dateModified":"2022-01-25T11:15:22+11:00","publisher":{"@type":"Organization","name":"JD"},"author":{"@type":"Person","name":"JD"},"description":"Stormspotter"}</script></head>
 <body header-desktop header-mobile><script type=text/javascript>('false'==='true'&&window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':''==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:''==='dark')&&document.body.setAttribute('theme','dark')</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
@@ -84,7 +84,7 @@ Cancel
 <div class=toc-content id=toc-content-auto></div>
 </div><article class="page single"><h1 class="single-title animated flipInX">Stormspotter</h1><div class=post-meta>
 <div class=post-meta-line><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw"></i>JD</a></span></div>
-<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2022-01-25>2022-01-25</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;149 words&nbsp;
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2022-01-25>2022-01-25</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;164 words&nbsp;
 <i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
 </div><div class="details toc" id=toc-static kept>
 <div class="details-summary toc-title">
@@ -106,6 +106,16 @@ Cancel
 </div><div class=content id=content><h2 id=introduction>Introduction</h2>
 <p><a href=https://github.com/Azure/Stormspotter target=_blank rel="noopener noreferrer">Stomspotter</a> is an Azure Red Team tool to graph Azure and Azure AD objects.</p>
 <p>By mapping out relationships between objects, Stormspotter visualises the attack paths between Azure objects.</p>
+<div class="details admonition warning open">
+<div class="details-summary admonition-title">
+<i class="icon fas fa-exclamation-triangle fa-fw"></i>Warning<i class="details-icon fas fa-angle-right fa-fw"></i>
+</div>
+<div class=details-content>
+<div class=admonition-content><p>Stormspotter currently only <a href=https://github.com/Azure/Stormspotter/issues/49 target=_blank rel="noopener noreferrer">supports Neo4j 3.x.x</a>.</p>
+<p>I recommend setting <code>image: neo4j:3.5.18</code> in your docker-compose.yml</p>
+</div>
+</div>
+</div>
 <h2 id=requirements>Requirements</h2>
 <ul>
 <li>Docker</li>
@@ -174,7 +184,7 @@ Cancel
 <span><a href=javascript:void(0); onclick=window.history.back()>Back</a></span>&nbsp;|&nbsp;<span><a href=/>Home</a></span>
 </section>
 </div>
-<div class=post-nav><a href=/posts/osdcloud/ class=prev rel=prev title=OSDCloud><i class="fas fa-angle-left fa-fw"></i>OSDCloud</a></div>
+<div class=post-nav><a href=/posts/ad-password-audit/ class=prev rel=prev title="AD Password Audit"><i class="fas fa-angle-left fa-fw"></i>AD Password Audit</a></div>
 </div>
 <div id=comments><div id=disqus_thread class=comment></div><noscript>
 Please enable JavaScript to view the comments powered by <a href=https://disqus.com/?ref_noscript>Disqus</a>.
