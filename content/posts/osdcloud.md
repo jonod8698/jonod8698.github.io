@@ -4,7 +4,7 @@ subtitle: ""
 description: "Osdcloud"
 date: 2022-01-24T22:52:11+11:00
 lastmod: 2022-01-24T22:52:11+11:00
-draft: false
+draft: true
 
 author: "JD"
 authorLink: ""
@@ -68,6 +68,6 @@ Change as required. I added Lenovo and HP instead of Dell.
 
 Click Run
 
+### Additional Information
 
-
-### Subtitle 2
+- [OSDCloud Youtube Talk](https://www.youtube.com/watch?v=ltCRnl8MCjI)

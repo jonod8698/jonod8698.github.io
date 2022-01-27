@@ -34,6 +34,12 @@ seo:
 
 By mapping out relationships between objects, Stormspotter visualises the attack paths between Azure objects.
 
+{{< admonition type=warning title="Warning" open=true >}}
+Stormspotter currently only [supports Neo4j 3.x.x](https://github.com/Azure/Stormspotter/issues/49).
+
+I recommend setting `image: neo4j:3.5.18` in your docker-compose.yml
+{{< /admonition >}}
+
 
 ## Requirements
 - Docker
@@ -86,3 +92,4 @@ python3 sscollector.pyz cli
 ![Processing-status](/2022-01-25-12-10-44.png)
 
 7. Complete. Enjoy!
+
