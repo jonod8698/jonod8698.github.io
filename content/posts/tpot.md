@@ -9,8 +9,8 @@ draft: false
 author: "JD"
 authorLink: ""
 
-tags: []
-categories: []
+tags: [Honeypot]
+categories: [Security]
 
 
 hiddenFromHomePage: false
