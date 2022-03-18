@@ -70,7 +70,9 @@ Client
 	- via GPO:
 		- From the Group Policy Management Console, go to Computer Configuration -> Administrative Templates -> System -> Credentials Delegation.
 		- Set policy to one of the following depending on requirements:
-			- 
+			- Restricted Admin mode or RCG: Choose `Restrict Credential Delegation`
+			- Only RCG: Choose `Require Remote Credential Guard`
+			- Only Restricted Admin mode: Choose `Require Restricted Admin`
 	- with a parameter
 		- `mstsc.exe /remoteGuard`
 
