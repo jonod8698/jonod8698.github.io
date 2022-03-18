@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/hugo.technologify.net\/posts\/remote-credential-guard\/"
-        },"genre": "posts","keywords": "Remote Credential Guard, Kerberos","wordcount":  433 ,
+        },"genre": "posts","keywords": "Remote Credential Guard, Kerberos","wordcount":  457 ,
         "url": "https:\/\/hugo.technologify.net\/posts\/remote-credential-guard\/","datePublished": "2022-03-19T00:27:04+11:00","dateModified": "2022-03-19T00:27:04+11:00","publisher": {
             "@type": "Organization",
             "name": "JD"},"author": {
@@ -104,7 +104,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Remote Credential Guard</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>JD</a></span>&nbsp;<span class="post-category">included in <a href="/categories/security/"><i class="far fa-folder fa-fw"></i>Security</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-03-19">2022-03-19</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;433 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-03-19">2022-03-19</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;457 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -122,7 +122,6 @@
         <li><a href="#instructions">Instructions</a></li>
       </ul>
     </li>
-    <li><a href="#set-policy-to-one-of-the-following-depending-on-requirements">Set policy to one of the following depending on requirements:</a></li>
     <li><a href="#links">Links</a></li>
   </ul>
 </nav></div>
@@ -169,8 +168,12 @@
 <li>via GPO:
 <ul>
 <li>From the Group Policy Management Console, go to Computer Configuration -&gt; Administrative Templates -&gt; System -&gt; Credentials Delegation.</li>
-<li>
-<h2 id="set-policy-to-one-of-the-following-depending-on-requirements">Set policy to one of the following depending on requirements:</h2>
+<li>Set policy to one of the following depending on requirements:
+<ul>
+<li>Restricted Admin mode or RCG: Choose <code>Restrict Credential Delegation</code></li>
+<li>Only RCG: Choose <code>Require Remote Credential Guard</code></li>
+<li>Only Restricted Admin mode: Choose <code>Require Restricted Admin</code></li>
+</ul>
 </li>
 </ul>
 </li>
