@@ -3,7 +3,15 @@
         <title>Security - Category - JDTech</title>
         <link>https://hugo.technologify.net/categories/security/</link>
         <description>Security - Category - JDTech</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 21 Jan 2022 21:48:57 &#43;1100</lastBuildDate><atom:link href="https://hugo.technologify.net/categories/security/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 19 Mar 2022 00:27:04 &#43;1100</lastBuildDate><atom:link href="https://hugo.technologify.net/categories/security/" rel="self" type="application/rss+xml" /><item>
+    <title>Remote Credential Guard</title>
+    <link>https://hugo.technologify.net/posts/remote-credential-guard/</link>
+    <pubDate>Sat, 19 Mar 2022 00:27:04 &#43;1100</pubDate><dc:creator>JD</dc:creator><guid>https://hugo.technologify.net/posts/remote-credential-guard/</guid>
+    <description><![CDATA[Summary RCG protects admin credentials by ensuring they are not passed over the network to the target device.
+Details Clients with RCG enabled do not send primary credentials to the target machine. This mitigates the risk of stolen credentials if the target is compromised.
+In RCG, the client LSA acts as a reverse proxy for ticket requests from the target. Hence, the target never needs to store primary credentials.
+RCG will not allow NTLM fallback.]]></description>
+</item><item>
     <title>AD Password Audit</title>
     <link>https://hugo.technologify.net/posts/ad-password-audit/</link>
     <pubDate>Fri, 21 Jan 2022 21:48:57 &#43;1100</pubDate><dc:creator>JD</dc:creator><guid>https://hugo.technologify.net/posts/ad-password-audit/</guid>

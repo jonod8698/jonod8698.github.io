@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "style.min.css",
-	"sourceRoot": "X:/SynologyDrive/Personal/Homelab/Website_decrypted/jonod8698.github.io",
+	"sourceRoot": "C:/Users/jduan/SynologyDrive/Personal/Homelab/Website_decrypted/jonod8698.github.io",
 	"sources": [
 		"themes/CodeIT/assets/css/style.scss",
 		"themes/CodeIT/assets/css/_variables.scss",

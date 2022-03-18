@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-	<meta name="generator" content="Hugo 0.94.2" />
+	<meta name="generator" content="Hugo 0.95.0" />
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
@@ -90,6 +90,14 @@
 <main class="main">
                 <div class="container"><div class="page home" posts><div class="home-profile"></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/remote-credential-guard/">Remote Credential Guard</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>JD</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-03-19">2022-03-19</time></span>&nbsp;<span class="post-category">included in <a href="/categories/security/"><i class="far fa-folder fa-fw"></i>Security</a></span></div><div class="content">Summary RCG protects admin credentials by ensuring they are not passed over the network to the target device.
+Details Clients with RCG enabled do not send primary credentials to the target machine. This mitigates the risk of stolen credentials if the target is compromised.
+In RCG, the client LSA acts as a reverse proxy for ticket requests from the target. Hence, the target never needs to store primary credentials.
+RCG will not allow NTLM fallback.</div><div class="post-footer">
+        <a href="/posts/remote-credential-guard/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/remote-credential-guard/">Remote Credential Guard</a>,&nbsp;<a href="/tags/kerberos/">Kerberos</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/stormspotter/">Stormspotter</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>JD</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-01-25">2022-01-25</time></span></div><div class="content">Introduction Stomspotter is an Azure Red Team tool to graph Azure and Azure AD objects.
 By mapping out relationships between objects, Stormspotter visualises the attack paths between Azure objects.
