@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+    <channel>
+        <title>Network - Tag - JDTech</title>
+        <link>https://hugo.technologify.net/tags/network/</link>
+        <description>Network - Tag - JDTech</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 20 Mar 2022 16:29:31 &#43;1100</lastBuildDate><atom:link href="https://hugo.technologify.net/tags/network/" rel="self" type="application/rss+xml" /><item>
+    <title>Wpad Security</title>
+    <link>https://hugo.technologify.net/posts/wpad-security/</link>
+    <pubDate>Sun, 20 Mar 2022 16:29:31 &#43;1100</pubDate><dc:creator>JD</dc:creator><guid>https://hugo.technologify.net/posts/wpad-security/</guid>
+    <description><![CDATA[What is WPAD? WPAD stands for Windows Proxy Auto-Discovery. It is a protocol to obtain the URL for a PAC file.
+WPAD uses the following methods in order to discover the PAC file URL:
+ DHCP DNS WINS LLMNR NetBIOS Hosts Lmhosts  The PAC file tells the host where to direct network traffic. This is usually used to force traffic through a web proxy.
+Why is it insecure? When DHCP or DNS is misconfigured or not configured, an attacker can provide the client with a PAC file that directs traffic to a compromised server.]]></description>
+</item></channel>
+</rss>

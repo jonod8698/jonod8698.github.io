@@ -2,14 +2,16 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://hugo.technologify.net/categories/</loc><lastmod>2022-03-19T00:27:04&#43;11:00</lastmod></url><url>
-            <loc>https://hugo.technologify.net/</loc><lastmod>2022-03-19T00:27:04&#43;11:00</lastmod></url><url>
+            <loc>https://hugo.technologify.net/categories/</loc><lastmod>2022-03-20T16:29:31&#43;11:00</lastmod></url><url>
+            <loc>https://hugo.technologify.net/</loc><lastmod>2022-03-20T16:29:31&#43;11:00</lastmod></url><url>
+            <loc>https://hugo.technologify.net/tags/network/</loc><lastmod>2022-03-20T16:29:31&#43;11:00</lastmod></url><url>
+            <loc>https://hugo.technologify.net/posts/</loc><lastmod>2022-03-20T16:29:31&#43;11:00</lastmod></url><url>
+            <loc>https://hugo.technologify.net/categories/security/</loc><lastmod>2022-03-20T16:29:31&#43;11:00</lastmod></url><url>
+            <loc>https://hugo.technologify.net/tags/</loc><lastmod>2022-03-20T16:29:31&#43;11:00</lastmod></url><url>
+            <loc>https://hugo.technologify.net/posts/wpad-security/</loc><lastmod>2022-03-20T16:29:31&#43;11:00</lastmod></url><url>
             <loc>https://hugo.technologify.net/tags/kerberos/</loc><lastmod>2022-03-19T00:27:04&#43;11:00</lastmod></url><url>
-            <loc>https://hugo.technologify.net/posts/</loc><lastmod>2022-03-19T00:27:04&#43;11:00</lastmod></url><url>
             <loc>https://hugo.technologify.net/tags/remote-credential-guard/</loc><lastmod>2022-03-19T00:27:04&#43;11:00</lastmod></url><url>
             <loc>https://hugo.technologify.net/posts/remote-credential-guard/</loc><lastmod>2022-03-19T00:27:04&#43;11:00</lastmod></url><url>
-            <loc>https://hugo.technologify.net/categories/security/</loc><lastmod>2022-03-19T00:27:04&#43;11:00</lastmod></url><url>
-            <loc>https://hugo.technologify.net/tags/</loc><lastmod>2022-03-19T00:27:04&#43;11:00</lastmod></url><url>
             <loc>https://hugo.technologify.net/posts/stormspotter/</loc><lastmod>2022-01-25T11:15:22&#43;11:00</lastmod></url><url>
             <loc>https://hugo.technologify.net/tags/ad/</loc><lastmod>2022-01-21T21:48:57&#43;11:00</lastmod></url><url>
             <loc>https://hugo.technologify.net/posts/ad-password-audit/</loc><lastmod>2022-01-21T21:48:57&#43;11:00</lastmod></url><url>
