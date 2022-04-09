@@ -1,3 +1,0 @@
-Contact: mailto:noujaim_decapitating@aleeas.com
-Expires: 2023-01-27T09:25:00.000Z
-Encryption: https://jdtech.me/pgp-key.txt

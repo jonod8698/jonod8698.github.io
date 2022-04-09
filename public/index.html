@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-	<meta name="generator" content="Hugo 0.95.0" />
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="robots" content="noodp" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>JDTech</title><meta name="description" content=""><meta property="og:title" content="JDTech" />
+
+<head>
+	<meta name="generator" content="Hugo 0.96.0" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp" />
+    <title class="pjax-title">JDTech</title><meta name="Description" content=""><meta property="og:title" content="JDTech" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://hugo.technologify.net/" />
@@ -15,19 +15,31 @@
 <meta name="twitter:title" content="JDTech"/>
 <meta name="twitter:description" content=""/>
 <meta name="application-name" content="JDTech">
-<meta name="apple-mobile-web-app-title" content="JDTech"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<meta name="apple-mobile-web-app-title" content="JDTech">
+
+<meta name="theme-color" content="#f8f8f8"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://hugo.technologify.net/" /><link rel="alternate" href="/index.xml" type="application/rss+xml" title="JDTech">
-    <link rel="feed" href="/index.xml" type="application/rss+xml" title="JDTech"><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="canonical" href="https://hugo.technologify.net/" /><link rel="alternate" href="/index.xml" type="application/rss+xml" title="JDTech">
+    <link rel="feed" href="/index.xml" type="application/rss+xml" title="JDTech"><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "WebSite",
         "url": "https:\/\/hugo.technologify.net\/","inLanguage": "en","name": "JDTech"
     }
     </script></head>
-    <body header-desktop="" header-mobile=""><script type="text/javascript">('false' === 'true' && window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
 
-        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+<body header-desktop="" header-mobile=""><script type="text/javascript">
+        function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark');}
+        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
+        function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
+        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('' === 'light' || '' === 'dark' || '' === 'black') setTheme(''), saveTheme(''); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
+        let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
+        getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
+    </script>
+    <div id="back-to-top"></div>
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
     <div class="header-wrapper">
         <div class="header-title">
             <a href="/" title="JDTech">JDTech</a>
@@ -35,19 +47,18 @@
         <div class="menu">
             <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
                         <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
-                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                        <a href="#" onclick="return false;" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
                             <i class="fas fa-search fa-fw"></i>
                         </a>
-                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                        <a href="#" onclick="return false;" class="search-button search-clear" id="search-clear-desktop" title="Clear">
                             <i class="fas fa-times-circle fa-fw"></i>
                         </a>
                         <span class="search-button search-loading" id="search-loading-desktop">
                             <i class="fas fa-spinner fa-fw fa-spin"></i>
                         </span>
-                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    </span><a href="#" onclick="return false;" class="menu-item theme-switch" title="Switch Theme">
                     <i class="fas fa-adjust fa-fw"></i>
-                </a>
-            </div>
+                </a></div>
         </div>
     </div>
 </header><header class="mobile" id="header-mobile">
@@ -63,20 +74,20 @@
         <div class="menu" id="menu-mobile"><div class="search-wrapper">
                     <div class="search mobile" id="search-mobile">
                         <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
-                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                        <a href="#" onclick="return false;" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
                             <i class="fas fa-search fa-fw"></i>
                         </a>
-                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                        <a href="#" onclick="return false;" class="search-button search-clear" id="search-clear-mobile" title="Clear">
                             <i class="fas fa-times-circle fa-fw"></i>
                         </a>
                         <span class="search-button search-loading" id="search-loading-mobile">
                             <i class="fas fa-spinner fa-fw fa-spin"></i>
                         </span>
                     </div>
-                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                    <a href="#" onclick="return false;" class="search-cancel" id="search-cancel-mobile">
                         Cancel
                     </a>
-                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="#" onclick="return false;" class="menu-item theme-switch" title="Switch Theme">
                 <i class="fas fa-adjust fa-fw"></i>
             </a></div>
     </div>
@@ -88,65 +99,84 @@
     <div id="search-dropdown-mobile"></div>
 </div>
 <main class="main">
-                <div class="container"><div class="page home" posts><div class="home-profile"></div>
+            <div class="container"><div class="page home" posts><div class="home-profile"></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/wpad-security/">Wpad Security</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>JD</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-03-20">2022-03-20</time></span>&nbsp;<span class="post-category">included in <a href="/categories/security/"><i class="far fa-folder fa-fw"></i>Security</a></span></div><div class="content">What is WPAD? WPAD stands for Windows Proxy Auto-Discovery. It is a protocol to obtain the URL for a PAC file.
+    </h1><div class="post-meta">
+        <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="/" title="Author" rel=" author" class="author">JD</a>
+        </span>&nbsp;<span class="post-publish">published on <time datetime="2022-03-20">2022-03-20</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/security/"><i class="far fa-folder fa-fw"></i>Security</a></span></div><div class="content">What is WPAD?WPAD stands for Windows Proxy Auto-Discovery. It is a protocol to obtain the URL for a PAC file.
 WPAD uses the following methods in order to discover the PAC file URL:
  DHCP DNS WINS LLMNR NetBIOS Hosts Lmhosts  The PAC file tells the host where to direct network traffic. This is usually used to force traffic through a web proxy.
-Why is it insecure? When DHCP or DNS is misconfigured or not configured, an attacker can provide the client with a PAC file that directs traffic to a compromised server.</div><div class="post-footer">
-        <a href="/posts/wpad-security/">Read More</a><div class="post-tags">
+Why is it insecure?When DHCP or DNS is misconfigured or not configured, an attacker can provide the client with a PAC file that directs traffic to a compromised server.</div><div class="post-footer">
+        <a href="/posts/wpad-security/">Read more...</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/network/">Network</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/remote-credential-guard/">Remote Credential Guard</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>JD</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-03-19">2022-03-19</time></span>&nbsp;<span class="post-category">included in <a href="/categories/security/"><i class="far fa-folder fa-fw"></i>Security</a></span></div><div class="content">Summary RCG protects admin credentials by ensuring they are not passed over the network to the target device.
-Details Clients with RCG enabled do not send primary credentials to the target machine. This mitigates the risk of stolen credentials if the target is compromised.
+    </h1><div class="post-meta">
+        <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="/" title="Author" rel=" author" class="author">JD</a>
+        </span>&nbsp;<span class="post-publish">published on <time datetime="2022-03-19">2022-03-19</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/security/"><i class="far fa-folder fa-fw"></i>Security</a></span></div><div class="content">SummaryRCG protects admin credentials by ensuring they are not passed over the network to the target device.
+DetailsClients with RCG enabled do not send primary credentials to the target machine. This mitigates the risk of stolen credentials if the target is compromised.
 In RCG, the client LSA acts as a reverse proxy for ticket requests from the target. Hence, the target never needs to store primary credentials.
 RCG will not allow NTLM fallback.</div><div class="post-footer">
-        <a href="/posts/remote-credential-guard/">Read More</a><div class="post-tags">
+        <a href="/posts/remote-credential-guard/">Read more...</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/remote-credential-guard/">Remote Credential Guard</a>,&nbsp;<a href="/tags/kerberos/">Kerberos</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/stormspotter/">Stormspotter</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>JD</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-01-25">2022-01-25</time></span></div><div class="content">Introduction Stomspotter is an Azure Red Team tool to graph Azure and Azure AD objects.
+    </h1><div class="post-meta">
+        <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="/" title="Author" rel=" author" class="author">JD</a>
+        </span>&nbsp;<span class="post-publish">published on <time datetime="2022-01-25">2022-01-25</time></span></div><div class="content">IntroductionStomspotter is an Azure Red Team tool to graph Azure and Azure AD objects.
 By mapping out relationships between objects, Stormspotter visualises the attack paths between Azure objects.
 WarningStormspotter currently only supports Neo4j 3.x.x.
 I recommend setting image: neo4j:3.5.18 in your docker-compose.yml
- Requirements  Docker Docker Compose Python 3.8.X Az PowerShell  Installation Installation via Docker to avoid manual installation of dependencies.
+ Requirements Docker Docker Compose Python 3.8.X Az PowerShell  InstallationInstallation via Docker to avoid manual installation of dependencies.
 The docker-compose file creates three containers:</div><div class="post-footer">
-        <a href="/posts/stormspotter/">Read More</a></div>
+        <a href="/posts/stormspotter/">Read more...</a></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/ad-password-audit/">AD Password Audit</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>JD</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-01-21">2022-01-21</time></span>&nbsp;<span class="post-category">included in <a href="/categories/security/"><i class="far fa-folder fa-fw"></i>Security</a></span></div><div class="content">Problem Statement Accounts with bad passwords, especially accounts with privileged access are the Achilles heel of an organisation’s security. Traditionally IT has tried to impose “strong password policies” such as “Choose a password with an uppercase letter, a number, a symbol and more than 10 characters”. However, a password like “Summer2020!” satisfies ALL those requirements despite being an immesurably weak password.
+    </h1><div class="post-meta">
+        <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="/" title="Author" rel=" author" class="author">JD</a>
+        </span>&nbsp;<span class="post-publish">published on <time datetime="2022-01-21">2022-01-21</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/security/"><i class="far fa-folder fa-fw"></i>Security</a></span></div><div class="content">Problem StatementAccounts with bad passwords, especially accounts with privileged access are the Achilles heel of an organisation’s security. Traditionally IT has tried to impose “strong password policies” such as “Choose a password with an uppercase letter, a number, a symbol and more than 10 characters”. However, a password like “Summer2020!” satisfies ALL those requirements despite being an immesurably weak password.
 So, what can we as IT professionals do to reduce bad passwords and mitigate their impact?</div><div class="post-footer">
-        <a href="/posts/ad-password-audit/">Read More</a><div class="post-tags">
+        <a href="/posts/ad-password-audit/">Read more...</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/ad/">AD</a>,&nbsp;<a href="/tags/identity/">Identity</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/tpot/">Creating a Honeypot with T-Pot</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>JD</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-01-16">2022-01-16</time></span>&nbsp;<span class="post-category">included in <a href="/categories/security/"><i class="far fa-folder fa-fw"></i>Security</a></span></div><div class="content">Summary Tpotce is an all-in-one honeypot platform with a collection of honeypots and tools for monitoring them.
-Requirements  8GB RAM 128GB Disk Space Unfiltered Internet Access Isolated Subnet Promiscious Mode Enabled for fatt, suricata and p0f to work properly Port forward or NAT to the honeypot  Installation Set up is simple as the ISO is prebuilt.
+    </h1><div class="post-meta">
+        <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="/" title="Author" rel=" author" class="author">JD</a>
+        </span>&nbsp;<span class="post-publish">published on <time datetime="2022-01-16">2022-01-16</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/security/"><i class="far fa-folder fa-fw"></i>Security</a></span></div><div class="content">SummaryTpotce is an all-in-one honeypot platform with a collection of honeypots and tools for monitoring them.
+Requirements 8GB RAM 128GB Disk Space Unfiltered Internet Access Isolated Subnet Promiscious Mode Enabled for fatt, suricata and p0f to work properly Port forward or NAT to the honeypot  InstallationSet up is simple as the ISO is prebuilt.
  Download the latest ISO from Tpotce releases Mount the ISO to a VM and run through the installer.</div><div class="post-footer">
-        <a href="/posts/tpot/">Read More</a><div class="post-tags">
+        <a href="/posts/tpot/">Read more...</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/honeypot/">Honeypot</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/hugo/">Hugo</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>JD</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-12-27">2021-12-27</time></span>&nbsp;<span class="post-category">included in <a href="/categories/other/"><i class="far fa-folder fa-fw"></i>other</a></span></div><div class="content">Like many others, I&rsquo;m sick of using Wordpress. I&rsquo;ve finally decided to switch to a static site using Hugo.
-Hugo Setup Install Hugo I&rsquo;m using the CodeIT Hugo theme. This requires Hugo Extended.
+    </h1><div class="post-meta">
+        <span class="post-author"><i class="author fas fa-user-circle fa-fw"></i><a href="/" title="Author" rel=" author" class="author">JD</a>
+        </span>&nbsp;<span class="post-publish">published on <time datetime="2021-12-27">2021-12-27</time></span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/other/"><i class="far fa-folder fa-fw"></i>other</a></span></div><div class="content">Like many others, I&rsquo;m sick of using Wordpress. I&rsquo;ve finally decided to switch to a static site using Hugo.
+Hugo SetupInstall HugoI&rsquo;m using the CodeIT Hugo theme. This requires Hugo Extended.
 Installation via Chocolatey
-choco install hugo-extended Create a new site Hugo will create a new site named &lt;my-site&gt;
-hugo new site &lt;my-site&gt; Install a theme I like the simplicity and aesthetics of the CodeIT theme.
+choco install hugo-extended Create a new siteHugo will create a new site named &lt;my-site&gt;
+hugo new site &lt;my-site&gt; Install a themeI like the simplicity and aesthetics of the CodeIT theme.
 Create a git repository and make the CodeIT repo a submodule of the side directory.</div><div class="post-footer">
-        <a href="/posts/hugo/">Read More</a><div class="post-tags">
+        <a href="/posts/hugo/">Read more...</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/knowledge-management/">knowledge-management</a>,&nbsp;<a href="/tags/static-site/">static-site</a></div></div>
 </article></div></div>
-            </main><footer class="footer">
+        </main><footer class="footer">
         <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2022</span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
-        </div>
-    </footer></div>
+            <div class="footer-line"></div>
+            <div class="footer-line">
+            </div>
+        </div></footer></div>
 
-        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
-                <i class="fas fa-arrow-up fa-fw"></i>
-            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
-                <i class="fas fa-comment fa-fw"></i>
-            </a>
-        </div><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/auto-render.min.js"></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js"></script><script type="text/javascript" src="/lib/katex/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+    <div id="fixed-buttons"><a href="#back-to-top" id="back-to-top-button" class="fixed-button" title="Back to Top">
+            <i class="fas fa-arrow-up fa-fw"></i>
+        </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+            <i class="fas fa-comment fa-fw"></i>
+        </a>
+    </div><div class="assets"><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/topbar/topbar.min.js"></script><script type="text/javascript" src="/lib/pjax/pjax.min.js"></script><script type="text/javascript" src="/js/theme.min.js" defer></script></div>
+
+<div class="pjax-assets"><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"},"sharerjs":true};</script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js" defer></script><script type="text/javascript" src="/lib/katex/auto-render.min.js" defer></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js" defer></script><script type="text/javascript" src="/lib/katex/mhchem.min.js" defer></script><script type="text/javascript" src="/js/katex.min.js" defer></script><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/katex/copy-tex.min.css">
+        <noscript><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"></noscript></div>
+</body>
+
 </html>
