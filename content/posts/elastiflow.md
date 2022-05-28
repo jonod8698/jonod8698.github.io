@@ -93,3 +93,10 @@ Some references:
 
 - https://www.plixer.com/blog/ubiquiti-netflow-support/
 - https://davejlong.com/setting-up-netflow-on-unifi-security-gateway/
+
+## Future Setup
+
+- Persistent USG configuration.
+- Enabling Elastiflow enrichment features.
+- Multi-cluster Elastiflow with Kubernetes/Docker.
+- Ansible automation.
