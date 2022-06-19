@@ -1,6 +1,6 @@
 ---
 title: "Hugo"
-description: "Hugo"
+description: "Static sites with Hugo"
 date: 2021-12-27T22:41:38+11:00
 lastmod: 2021-12-27T22:41:38+11:00
 draft: false
@@ -27,7 +27,9 @@ seo:
     images:
 ---
 
-Like many others, I'm sick of using Wordpress. I've finally decided to switch to a static site using [Hugo](https://gohugo.io/).
+> Update: I've since switched to the [PaperMod Theme](https://github.com/adityatelange/hugo-PaperMod)
+
+I'm sick of maintaining Wordpress. I've finally decided to switch to a static site using [Hugo](https://gohugo.io/).
 
 ## Hugo Setup
 
@@ -48,7 +50,7 @@ hugo new site <my-site>
 ```
 
 ### Install a theme
-I like the simplicity and aesthetics of the [DoIT](https://codeit.suntprogramator.dev/) theme.
+I like the simplicity and aesthetics of the [DoIT](https://hugodoit.pages.dev/) theme.
 
 Create a git repository and make the CodeIT repo a submodule of the side directory.
 ```powershell
