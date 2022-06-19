@@ -33,7 +33,7 @@ Like many others, I'm sick of using Wordpress. I've finally decided to switch to
 
 ### Install Hugo
 
-I'm using the [CodeIT](https://github.com/sunt-programator/CodeIT) Hugo theme. This requires [Hugo Extended](https://community.chocolatey.org/packages/hugo-extended).
+I'm using the [DoIT](https://github.com/HEIGE-PCloud/DoIt.git) Hugo theme. This requires [Hugo Extended](https://community.chocolatey.org/packages/hugo-extended).
 
 **Installation via Chocolatey**
 ```powershell
@@ -48,13 +48,13 @@ hugo new site <my-site>
 ```
 
 ### Install a theme
-I like the simplicity and aesthetics of the [CodeIT](https://codeit.suntprogramator.dev/) theme.
+I like the simplicity and aesthetics of the [DoIT](https://codeit.suntprogramator.dev/) theme.
 
 Create a git repository and make the CodeIT repo a submodule of the side directory.
 ```powershell
 cd <my-site>
 git init
-git submodule add https://github.com/sunt-programator/CodeIT.git themes/CodeIT
+git submodule add https://github.com/HEIGE-PCloud/DoIt.git themes/DoIT
 ```
 
 ### Configure the site
