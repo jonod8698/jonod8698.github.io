@@ -1,9 +1,1 @@
-[submodule "themes/DoIt"]
-	path = themes/DoIt
-	url = https://github.com/HEIGE-PCloud/DoIt.git
-[submodule "themes/CodeIT"]
-	path = themes/CodeIT
-	url = https://github.com/sunt-programator/CodeIT.git
-[submodule "themes/DoIT"]
-	path = themes/DoIT
-	url = https://github.com/HEIGE-PCloud/DoIt.git
+
