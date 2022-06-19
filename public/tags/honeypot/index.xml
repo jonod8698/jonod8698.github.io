@@ -1,16 +1,23 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Honeypot - Tag - JDTech</title>
-        <link>https://hugo.technologify.net/tags/honeypot/</link>
-        <description>Honeypot - Tag - JDTech</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 16 Jan 2022 13:56:28 &#43;1100</lastBuildDate><atom:link href="https://hugo.technologify.net/tags/honeypot/" rel="self" type="application/rss+xml" /><item>
-    <title>Creating a Honeypot with T-Pot</title>
-    <link>https://hugo.technologify.net/posts/tpot/</link>
-    <pubDate>Sun, 16 Jan 2022 13:56:28 &#43;1100</pubDate><author>
-        <name>JD</name>
-    </author><guid>https://hugo.technologify.net/posts/tpot/</guid>
-    <description><![CDATA[SummaryTpotce is an all-in-one honeypot platform with a collection of honeypots and tools for monitoring them.
-Requirements 8GB RAM 128GB Disk Space Unfiltered Internet Access Isolated Subnet Promiscious Mode Enabled for fatt, suricata and p0f to work properly Port forward or NAT to the honeypot  InstallationSet up is simple as the ISO is prebuilt.
- Download the latest ISO from Tpotce releases Mount the ISO to a VM and run through the installer.]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Honeypot on JDTech</title>
+    <link>https://hugo.technologify.net/tags/honeypot/</link>
+    <description>Recent content in Honeypot on JDTech</description>
+    <image>
+      <url>https://hugo.technologify.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://hugo.technologify.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 16 Jan 2022 13:56:28 +1100</lastBuildDate><atom:link href="https://hugo.technologify.net/tags/honeypot/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Creating a Honeypot with T-Pot</title>
+      <link>https://hugo.technologify.net/posts/tpot/</link>
+      <pubDate>Sun, 16 Jan 2022 13:56:28 +1100</pubDate>
+      
+      <guid>https://hugo.technologify.net/posts/tpot/</guid>
+      <description>Tpot</description>
+    </item>
+    
+  </channel>
 </rss>

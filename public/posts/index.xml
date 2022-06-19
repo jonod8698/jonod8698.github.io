@@ -1,68 +1,68 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>All Posts - JDTech</title>
-        <link>https://hugo.technologify.net/posts/</link>
-        <description>All Posts | JDTech</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 20 Mar 2022 16:29:31 &#43;1100</lastBuildDate><atom:link href="https://hugo.technologify.net/posts/" rel="self" type="application/rss+xml" /><item>
-    <title>Wpad Security</title>
-    <link>https://hugo.technologify.net/posts/wpad-security/</link>
-    <pubDate>Sun, 20 Mar 2022 16:29:31 &#43;1100</pubDate><author>
-        <name>JD</name>
-    </author><guid>https://hugo.technologify.net/posts/wpad-security/</guid>
-    <description><![CDATA[What is WPAD?WPAD stands for Windows Proxy Auto-Discovery. It is a protocol to obtain the URL for a PAC file.
-WPAD uses the following methods in order to discover the PAC file URL:
- DHCP DNS WINS LLMNR NetBIOS Hosts Lmhosts  The PAC file tells the host where to direct network traffic. This is usually used to force traffic through a web proxy.
-Why is it insecure?When DHCP or DNS is misconfigured or not configured, an attacker can provide the client with a PAC file that directs traffic to a compromised server.]]></description>
-</item><item>
-    <title>Remote Credential Guard</title>
-    <link>https://hugo.technologify.net/posts/remote-credential-guard/</link>
-    <pubDate>Sat, 19 Mar 2022 00:27:04 &#43;1100</pubDate><author>
-        <name>JD</name>
-    </author><guid>https://hugo.technologify.net/posts/remote-credential-guard/</guid>
-    <description><![CDATA[SummaryRCG protects admin credentials by ensuring they are not passed over the network to the target device.
-DetailsClients with RCG enabled do not send primary credentials to the target machine. This mitigates the risk of stolen credentials if the target is compromised.
-In RCG, the client LSA acts as a reverse proxy for ticket requests from the target. Hence, the target never needs to store primary credentials.
-RCG will not allow NTLM fallback.]]></description>
-</item><item>
-    <title>Stormspotter</title>
-    <link>https://hugo.technologify.net/posts/stormspotter/</link>
-    <pubDate>Tue, 25 Jan 2022 11:15:22 &#43;1100</pubDate><author>
-        <name>JD</name>
-    </author><guid>https://hugo.technologify.net/posts/stormspotter/</guid>
-    <description><![CDATA[IntroductionStomspotter is an Azure Red Team tool to graph Azure and Azure AD objects.
-By mapping out relationships between objects, Stormspotter visualises the attack paths between Azure objects.
-WarningStormspotter currently only supports Neo4j 3.x.x.
-I recommend setting image: neo4j:3.5.18 in your docker-compose.yml
- Requirements Docker Docker Compose Python 3.8.X Az PowerShell  InstallationInstallation via Docker to avoid manual installation of dependencies.
-The docker-compose file creates three containers:]]></description>
-</item><item>
-    <title>AD Password Audit</title>
-    <link>https://hugo.technologify.net/posts/ad-password-audit/</link>
-    <pubDate>Fri, 21 Jan 2022 21:48:57 &#43;1100</pubDate><author>
-        <name>JD</name>
-    </author><guid>https://hugo.technologify.net/posts/ad-password-audit/</guid>
-    <description><![CDATA[Problem StatementAccounts with bad passwords, especially accounts with privileged access are the Achilles heel of an organisation’s security. Traditionally IT has tried to impose “strong password policies” such as “Choose a password with an uppercase letter, a number, a symbol and more than 10 characters”. However, a password like “Summer2020!” satisfies ALL those requirements despite being an immesurably weak password.
-So, what can we as IT professionals do to reduce bad passwords and mitigate their impact?]]></description>
-</item><item>
-    <title>Creating a Honeypot with T-Pot</title>
-    <link>https://hugo.technologify.net/posts/tpot/</link>
-    <pubDate>Sun, 16 Jan 2022 13:56:28 &#43;1100</pubDate><author>
-        <name>JD</name>
-    </author><guid>https://hugo.technologify.net/posts/tpot/</guid>
-    <description><![CDATA[SummaryTpotce is an all-in-one honeypot platform with a collection of honeypots and tools for monitoring them.
-Requirements 8GB RAM 128GB Disk Space Unfiltered Internet Access Isolated Subnet Promiscious Mode Enabled for fatt, suricata and p0f to work properly Port forward or NAT to the honeypot  InstallationSet up is simple as the ISO is prebuilt.
- Download the latest ISO from Tpotce releases Mount the ISO to a VM and run through the installer.]]></description>
-</item><item>
-    <title>Hugo</title>
-    <link>https://hugo.technologify.net/posts/hugo/</link>
-    <pubDate>Mon, 27 Dec 2021 22:41:38 &#43;1100</pubDate><author>
-        <name>JD</name>
-    </author><guid>https://hugo.technologify.net/posts/hugo/</guid>
-    <description><![CDATA[Like many others, I&rsquo;m sick of using Wordpress. I&rsquo;ve finally decided to switch to a static site using Hugo.
-Hugo SetupInstall HugoI&rsquo;m using the CodeIT Hugo theme. This requires Hugo Extended.
-Installation via Chocolatey
-choco install hugo-extended Create a new siteHugo will create a new site named &lt;my-site&gt;
-hugo new site &lt;my-site&gt; Install a themeI like the simplicity and aesthetics of the CodeIT theme.
-Create a git repository and make the CodeIT repo a submodule of the side directory.]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on JDTech</title>
+    <link>https://hugo.technologify.net/posts/</link>
+    <description>Recent content in Posts on JDTech</description>
+    <image>
+      <url>https://hugo.technologify.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://hugo.technologify.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 20 Mar 2022 16:29:31 +1100</lastBuildDate><atom:link href="https://hugo.technologify.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Wpad Security</title>
+      <link>https://hugo.technologify.net/posts/wpad-security/</link>
+      <pubDate>Sun, 20 Mar 2022 16:29:31 +1100</pubDate>
+      
+      <guid>https://hugo.technologify.net/posts/wpad-security/</guid>
+      <description>Wpad Security</description>
+    </item>
+    
+    <item>
+      <title>Remote Credential Guard</title>
+      <link>https://hugo.technologify.net/posts/remote-credential-guard/</link>
+      <pubDate>Sat, 19 Mar 2022 00:27:04 +1100</pubDate>
+      
+      <guid>https://hugo.technologify.net/posts/remote-credential-guard/</guid>
+      <description>Remote Credential Guard</description>
+    </item>
+    
+    <item>
+      <title>Stormspotter</title>
+      <link>https://hugo.technologify.net/posts/stormspotter/</link>
+      <pubDate>Tue, 25 Jan 2022 11:15:22 +1100</pubDate>
+      
+      <guid>https://hugo.technologify.net/posts/stormspotter/</guid>
+      <description>Stormspotter</description>
+    </item>
+    
+    <item>
+      <title>AD Password Audit</title>
+      <link>https://hugo.technologify.net/posts/ad-password-audit/</link>
+      <pubDate>Fri, 21 Jan 2022 21:48:57 +1100</pubDate>
+      
+      <guid>https://hugo.technologify.net/posts/ad-password-audit/</guid>
+      <description>Ad Password Audit</description>
+    </item>
+    
+    <item>
+      <title>Creating a Honeypot with T-Pot</title>
+      <link>https://hugo.technologify.net/posts/tpot/</link>
+      <pubDate>Sun, 16 Jan 2022 13:56:28 +1100</pubDate>
+      
+      <guid>https://hugo.technologify.net/posts/tpot/</guid>
+      <description>Tpot</description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://hugo.technologify.net/posts/hugo/</link>
+      <pubDate>Mon, 27 Dec 2021 22:41:38 +1100</pubDate>
+      
+      <guid>https://hugo.technologify.net/posts/hugo/</guid>
+      <description>Hugo</description>
+    </item>
+    
+  </channel>
 </rss>
