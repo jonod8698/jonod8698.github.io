@@ -63,7 +63,7 @@ Similar to above, `http://www.google.com/` is upgraded to `https://www.google.co
 > If you need to visit Google manually, you should probably type `www.google.com` rather than `google.com`. Address bar searches use HTTPS by default.
 
 
-### Conclusion
+## Conclusion
 
 HSTS is a powerful mechanism for protecting users against MitM attacks such as SSL Stripping or Session Hijacking.
 
