@@ -37,7 +37,7 @@ But what if HTTP is used on the first visit or a user clears their cache frequen
 
 Enter [HSTS Preloading](https://hstspreload.org/). It ensures common domains are configured with HSTS without requiring an initial vulnerable visit.
 
-> Another pseudo-HSTS preloading method which works for sites not on the preload list is by [enforcing HTTPS only connections in your browser](https://beebom.com/how-enable-https-only-mode-chrome-firefox-edge-safari/).
+> Another method to upgrade HTTP requests is to [enforce HTTPS only connections in your browser](https://beebom.com/how-enable-https-only-mode-chrome-firefox-edge-safari/).
 
 ## HSTS Preloading Implementation - DevTools
 Let's see how HSTS Preloading works in practice.
