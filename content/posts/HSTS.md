@@ -68,3 +68,6 @@ Similar to above, `http://www.google.com/` is upgraded to `https://www.google.co
 HSTS is a powerful mechanism for protecting users against MitM attacks such as SSL Stripping or Session Hijacking.
 
 But HSTS isn't a simple on/off switch on the client side. Many vulnerable combinations of settings exist, depending on the server and user input.
+
+## Additional Reading
+- [Not So Strict Transport Security](https://research.aurainfosec.io/not-so-strict-transport-security/)
