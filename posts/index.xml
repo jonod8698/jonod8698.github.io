@@ -9,16 +9,7 @@
       <link>https://hugo.technologify.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 19 Jun 2022 22:18:13 +1000</lastBuildDate><atom:link href="https://hugo.technologify.net/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Paper Towns</title>
-      <link>https://hugo.technologify.net/posts/books/paper-towns/</link>
-      <pubDate>Sun, 19 Jun 2022 22:18:13 +1000</pubDate>
-      
-      <guid>https://hugo.technologify.net/posts/books/paper-towns/</guid>
-      <description>Paper Towns</description>
-    </item>
-    
+    <lastBuildDate>Sun, 20 Mar 2022 16:29:31 +1100</lastBuildDate><atom:link href="https://hugo.technologify.net/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Wpad Security</title>
       <link>https://hugo.technologify.net/posts/wpad-security/</link>
