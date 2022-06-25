@@ -26,7 +26,7 @@ hugolib/hugo_stats.json
 resources/sunset.jpg
 
 vendor
-
+public
 # Generated files by hugo
 /public/
 /resources/_gen/
@@ -40,3 +40,4 @@ hugo.linux
 
 # Temporary lock file while building
 /.hugo_build.lock
+.gitmodules
