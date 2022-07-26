@@ -59,6 +59,15 @@ git init
 git submodule add https://github.com/HEIGE-PCloud/DoIt.git themes/DoIT
 ```
 
+> I must be doing something wrong. Sometimes, on new computers, the themes module doesn't load properly. In this case, I run the following commands. (At some point I need to read the docs properly).
+
+```powershell
+git rm --cached themes/PaperMod
+# remove contents of .gitmodules
+rm -force .git/modules/themes
+git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod
+```
+
 ### Configure the site
 
 
