@@ -9,7 +9,7 @@ draft: false
 author: "JD"
 authorLink: ""
 
-tags: [Security,Web,Network]
+tags: [Web,Network]
 categories: [Security]
 
 
