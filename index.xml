@@ -102,6 +102,15 @@ But what if HTTP is used on the first visit or a user clears their cache frequen
       <description>Static sites with Hugo</description>
     </item>
     
+    <item>
+      <title>Dns Capture</title>
+      <link>https://hugo.technologify.net/posts/dns-capture/</link>
+      <pubDate>Sun, 02 Aug 2020 13:57:51 +1000</pubDate>
+      
+      <guid>https://hugo.technologify.net/posts/dns-capture/</guid>
+      <description>Dns Capture</description>
+    </item>
+    
     
   </channel>
 </rss>
