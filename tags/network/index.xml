@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Network on JDTech</title>
-    <link>https://hugo.technologify.net/tags/network/</link>
+    <link>https://technologify.net/tags/network/</link>
     <description>Recent content in Network on JDTech</description>
     <image>
-      <url>https://hugo.technologify.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://hugo.technologify.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://technologify.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://technologify.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 24 Jun 2022 21:36:19 +1000</lastBuildDate><atom:link href="https://hugo.technologify.net/tags/network/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 24 Jun 2022 21:36:19 +1000</lastBuildDate><atom:link href="https://technologify.net/tags/network/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HSTS and Preloading</title>
-      <link>https://hugo.technologify.net/posts/hsts/</link>
+      <link>https://technologify.net/posts/hsts/</link>
       <pubDate>Fri, 24 Jun 2022 21:36:19 +1000</pubDate>
       
-      <guid>https://hugo.technologify.net/posts/hsts/</guid>
+      <guid>https://technologify.net/posts/hsts/</guid>
       <description>HSTS directs the browser to use HTTPS for certain domains (optionally subdomains). This mitigates some MitM attacks by upgrading HTTP connections to HTTPS.
 HSTS Preloading The native implementation of HSTS communicates the HSTS policy to the browser via an HTTP response header Strict-Transport-Security: max-age=31536000; includeSubDomains. HSTS requires a user to visit a website once before HSTS protection is cached.
 But what if HTTP is used on the first visit or a user clears their cache frequently?</description>
@@ -23,10 +23,10 @@ But what if HTTP is used on the first visit or a user clears their cache frequen
     
     <item>
       <title>Wpad Security</title>
-      <link>https://hugo.technologify.net/posts/wpad-security/</link>
+      <link>https://technologify.net/posts/wpad-security/</link>
       <pubDate>Sun, 20 Mar 2022 16:29:31 +1100</pubDate>
       
-      <guid>https://hugo.technologify.net/posts/wpad-security/</guid>
+      <guid>https://technologify.net/posts/wpad-security/</guid>
       <description>Wpad Security</description>
     </item>
     
