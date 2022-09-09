@@ -1,4 +1,4 @@
-baseURL: "https://hugo.technologify.net/"
+baseURL: "https://technologify.net/"
 title: JDTech
 paginate: 5
 theme: PaperMod
