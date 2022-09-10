@@ -9,16 +9,7 @@
       <link>https://technologify.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 31 Jul 2022 18:57:18 +1000</lastBuildDate><atom:link href="https://technologify.net/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Automating vSphere with PowerCLI</title>
-      <link>https://technologify.net/posts/powercli/</link>
-      <pubDate>Sun, 31 Jul 2022 18:57:18 +1000</pubDate>
-      
-      <guid>https://technologify.net/posts/powercli/</guid>
-      <description>Powercli</description>
-    </item>
-    
+    <lastBuildDate>Wed, 27 Jul 2022 19:44:50 +1000</lastBuildDate><atom:link href="https://technologify.net/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Antivirus is Bad</title>
       <link>https://technologify.net/posts/antivirus/</link>
@@ -109,6 +100,15 @@ But what if HTTP is used on the first visit or a user clears their cache frequen
       
       <guid>https://technologify.net/posts/dns-capture/</guid>
       <description>Dns Capture</description>
+    </item>
+    
+    <item>
+      <title>Automating vSphere with PowerCLI</title>
+      <link>https://technologify.net/posts/powercli/</link>
+      <pubDate>Fri, 31 Jul 2020 18:57:18 +1000</pubDate>
+      
+      <guid>https://technologify.net/posts/powercli/</guid>
+      <description>Powercli</description>
     </item>
     
     
