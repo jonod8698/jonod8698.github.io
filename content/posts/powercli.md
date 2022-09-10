@@ -2,8 +2,8 @@
 title: "Automating vSphere with PowerCLI"
 subtitle: ""
 description: "Powercli"
-date: 2022-07-31T18:57:18+10:00
-lastmod: 2022-07-31T18:57:18+10:00
+date: 2020-07-31T18:57:18+10:00
+lastmod: 2020-07-31T18:57:18+10:00
 draft: false
 
 author: "JD"
