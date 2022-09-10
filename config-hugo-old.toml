@@ -1,4 +1,4 @@
-baseURL = "https://hugo.technologify.net"
+baseURL = "https://technologify.net"
 # [en] determines default content language
 defaultContentLanguage = "en"
 # language code
