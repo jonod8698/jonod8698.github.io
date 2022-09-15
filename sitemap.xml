@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://technologify.net/tags/appsec/</loc>
+    <lastmod>2022-09-15T22:26:29+10:00</lastmod>
+  </url><url>
+    <loc>https://technologify.net/categories/</loc>
+    <lastmod>2022-09-15T22:26:29+10:00</lastmod>
+  </url><url>
     <loc>https://technologify.net/posts/security/file-inclusion/</loc>
     <lastmod>2022-09-15T22:26:29+10:00</lastmod>
   </url><url>
@@ -11,19 +17,19 @@
     <loc>https://technologify.net/posts/</loc>
     <lastmod>2022-09-15T22:26:29+10:00</lastmod>
   </url><url>
+    <loc>https://technologify.net/categories/securtiy/</loc>
+    <lastmod>2022-09-15T22:26:29+10:00</lastmod>
+  </url><url>
+    <loc>https://technologify.net/tags/</loc>
+    <lastmod>2022-09-15T22:26:29+10:00</lastmod>
+  </url><url>
     <loc>https://technologify.net/posts/antivirus/</loc>
     <lastmod>2022-07-27T19:44:50+10:00</lastmod>
   </url><url>
     <loc>https://technologify.net/tags/av/</loc>
     <lastmod>2022-07-27T19:44:50+10:00</lastmod>
   </url><url>
-    <loc>https://technologify.net/categories/</loc>
-    <lastmod>2022-07-27T19:44:50+10:00</lastmod>
-  </url><url>
     <loc>https://technologify.net/categories/security/</loc>
-    <lastmod>2022-07-27T19:44:50+10:00</lastmod>
-  </url><url>
-    <loc>https://technologify.net/tags/</loc>
     <lastmod>2022-07-27T19:44:50+10:00</lastmod>
   </url><url>
     <loc>https://technologify.net/posts/hsts/</loc>
