@@ -34,6 +34,8 @@ LFI and RFI are terms I've heard many times in the past 5 years, mainly in the c
 
 RFI occurs when an attacker triggers a webserver to load a remote file.
 
+![](/images/2022-09-15-23-47-34.png)
+
 Impact: attacker can execute code a remote file they control, obtaining a shell on the webserver.
 
 Cause: user directly controlling the file loaded by a server. for example, a navigation page which loads the contents of a file.
