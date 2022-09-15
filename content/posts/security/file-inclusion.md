@@ -9,8 +9,8 @@ draft: false
 author: "JD"
 authorLink: ""
 
-tags: []
-categories: []
+tags: [AppSec]
+categories: [Securtiy]
 
 
 hiddenFromHomePage: false

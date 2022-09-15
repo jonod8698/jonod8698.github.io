@@ -30,7 +30,6 @@ seo:
 What is Antivirus/AV/NGAV? Is AV "useless"? What AV should I use?
 
 I've been asked all of the above by non-IT and IT users. Usually they fall into two groups. Either AV is useless or AV is the only security required. As usual, the truth is more nuanced. AV is an often unappreciated foundational security control for endpoints.
-
 ## What is the purpose of AV?
 AV is a scalable platform to block known attack methods/artifacts that increases the cost of attacking and persisting on an endpoint. It exists as untrusted code is allowed to execute by default in major operating systems.
 
