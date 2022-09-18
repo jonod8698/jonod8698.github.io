@@ -28,7 +28,7 @@ seo:
     images:
 ---
 ## Summary
-Egress filtering limits traffic leaving the network perimeter. 
+Egress filtering limits traffic leaving the network perimeter.
 
 Why? Egress filtering is good security architecture as it prevents computers on the network from sending unwanted traffic to the internet. Limiting the attack surface protects against low-skill opportunistic attacks while reducing the breath of things to monitor.
 - C2 communication
