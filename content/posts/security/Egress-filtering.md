@@ -2,15 +2,15 @@
 title: "Egress Filtering"
 subtitle: ""
 description: "Egress Filtering"
-date: 2022-09-18T21:12:58+10:00
-lastmod: 2022-09-18T21:12:58+10:00
+date: 2022-05-18T21:12:58+10:00
+lastmod: 2022-05-18T21:12:58+10:00
 draft: false
 
 author: "JD"
 authorLink: ""
 
 tags: []
-categories: []
+categories: [Security]
 
 
 hiddenFromHomePage: false
@@ -28,11 +28,11 @@ seo:
     images:
 ---
 ## Summary
-Egress filtering determines what traffic leaves the network perimeter. 
+Egress filtering limits traffic leaving the network perimeter. 
 
 Why? Egress filtering is good security architecture as it prevents computers on the network from sending unwanted traffic to the internet. Limiting the attack surface protects against low-skill opportunistic attacks while reducing the breath of things to monitor.
 - C2 communication
-- Exposing information to attackers
+- Exposing information to attackers - e.g. stealing NetNTLMv2 hashes by [coercing a client to authenticate to an attacker controlled SMB share](https://www.bleepingcomputer.com/news/security/zoom-lets-attackers-steal-windows-credentials-run-programs-via-unc-links/)
 
 Network traffic Analysis solutions such as [Elastiflow](https://www.elastiflow.com/) can provide data on ports/IPs being used.
 
