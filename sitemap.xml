@@ -2,15 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://technologify.net/posts/security/egress-filtering/</loc>
-    <lastmod>2022-09-18T21:12:58+10:00</lastmod>
-  </url><url>
-    <loc>https://technologify.net/</loc>
-    <lastmod>2022-09-18T21:12:58+10:00</lastmod>
-  </url><url>
-    <loc>https://technologify.net/posts/</loc>
-    <lastmod>2022-09-18T21:12:58+10:00</lastmod>
-  </url><url>
     <loc>https://technologify.net/tags/appsec/</loc>
     <lastmod>2022-09-15T22:26:29+10:00</lastmod>
   </url><url>
@@ -18,6 +9,12 @@
     <lastmod>2022-09-15T22:26:29+10:00</lastmod>
   </url><url>
     <loc>https://technologify.net/posts/security/file-inclusion/</loc>
+    <lastmod>2022-09-15T22:26:29+10:00</lastmod>
+  </url><url>
+    <loc>https://technologify.net/</loc>
+    <lastmod>2022-09-15T22:26:29+10:00</lastmod>
+  </url><url>
+    <loc>https://technologify.net/posts/</loc>
     <lastmod>2022-09-15T22:26:29+10:00</lastmod>
   </url><url>
     <loc>https://technologify.net/categories/securtiy/</loc>
@@ -46,6 +43,9 @@
   </url><url>
     <loc>https://technologify.net/posts/elastiflow/</loc>
     <lastmod>2022-05-29T00:52:51+10:00</lastmod>
+  </url><url>
+    <loc>https://technologify.net/posts/security/egress-filtering/</loc>
+    <lastmod>2022-05-18T21:12:58+10:00</lastmod>
   </url><url>
     <loc>https://technologify.net/posts/wpad-security/</loc>
     <lastmod>2022-03-20T16:29:31+11:00</lastmod>
