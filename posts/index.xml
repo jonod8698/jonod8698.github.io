@@ -9,7 +9,16 @@
       <link>https://technologify.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 15 Sep 2022 22:26:29 +1000</lastBuildDate><atom:link href="https://technologify.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 18 Sep 2022 21:12:58 +1000</lastBuildDate><atom:link href="https://technologify.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Egress Filtering</title>
+      <link>https://technologify.net/posts/security/egress-filtering/</link>
+      <pubDate>Sun, 18 Sep 2022 21:12:58 +1000</pubDate>
+      
+      <guid>https://technologify.net/posts/security/egress-filtering/</guid>
+      <description>Egress Filtering</description>
+    </item>
+    
     <item>
       <title>File Inclusion</title>
       <link>https://technologify.net/posts/security/file-inclusion/</link>
