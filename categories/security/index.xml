@@ -9,16 +9,7 @@
       <link>https://technologify.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 27 Jul 2022 19:44:50 +1000</lastBuildDate><atom:link href="https://technologify.net/categories/security/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Antivirus is Bad</title>
-      <link>https://technologify.net/posts/antivirus/</link>
-      <pubDate>Wed, 27 Jul 2022 19:44:50 +1000</pubDate>
-      
-      <guid>https://technologify.net/posts/antivirus/</guid>
-      <description>Antivirus</description>
-    </item>
-    
+    <lastBuildDate>Fri, 24 Jun 2022 21:36:19 +1000</lastBuildDate><atom:link href="https://technologify.net/categories/security/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HSTS and Preloading</title>
       <link>https://technologify.net/posts/hsts/</link>
