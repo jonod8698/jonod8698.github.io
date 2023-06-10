@@ -5,10 +5,12 @@
     <link>https://technologify.net/tags/web/</link>
     <description>Recent content in Web on JDTech</description>
     <image>
+      <title>JDTech</title>
       <url>https://technologify.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://technologify.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     <lastBuildDate>Fri, 24 Jun 2022 21:36:19 +1000</lastBuildDate><atom:link href="https://technologify.net/tags/web/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HSTS and Preloading</title>
