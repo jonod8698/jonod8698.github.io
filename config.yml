@@ -1,7 +1,7 @@
 baseURL: "https://technologify.net/"
 title: JDTech
 paginate: 5
-theme: github.com/adityatelange/hugo-PaperMod
+theme: PaperMod
 
 enableRobotsTXT: true
 buildDrafts: false
