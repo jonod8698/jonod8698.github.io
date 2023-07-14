@@ -11,60 +11,40 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 24 Jun 2022 21:36:19 +1000</lastBuildDate><atom:link href="https://technologify.net/categories/security/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>HSTS and Preloading</title>
-      <link>https://technologify.net/posts/hsts/</link>
-      <pubDate>Fri, 24 Jun 2022 21:36:19 +1000</pubDate>
-      
-      <guid>https://technologify.net/posts/hsts/</guid>
-      <description>HSTS directs the browser to use HTTPS for certain domains (optionally subdomains). This mitigates some MitM attacks by upgrading HTTP connections to HTTPS.
-HSTS Preloading The native implementation of HSTS communicates the HSTS policy to the browser via an HTTP response header Strict-Transport-Security: max-age=31536000; includeSubDomains. HSTS requires a user to visit a website once before HSTS protection is cached.
-But what if HTTP is used on the first visit or a user clears their cache frequently?</description>
-    </item>
-    
-    <item>
-      <title>Egress Filtering</title>
-      <link>https://technologify.net/posts/security/egress-filtering/</link>
-      <pubDate>Wed, 18 May 2022 21:12:58 +1000</pubDate>
-      
-      <guid>https://technologify.net/posts/security/egress-filtering/</guid>
-      <description>Egress Filtering</description>
-    </item>
-    
+    <lastBuildDate>Sun, 20 Mar 2022 16:29:31 +1100</lastBuildDate><atom:link href="https://technologify.net/categories/security/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Wpad Security</title>
-      <link>https://technologify.net/posts/wpad-security/</link>
+      <link>https://technologify.net/posts/draft/wpad-security/</link>
       <pubDate>Sun, 20 Mar 2022 16:29:31 +1100</pubDate>
       
-      <guid>https://technologify.net/posts/wpad-security/</guid>
+      <guid>https://technologify.net/posts/draft/wpad-security/</guid>
       <description>Wpad Security</description>
     </item>
     
     <item>
       <title>Remote Credential Guard</title>
-      <link>https://technologify.net/posts/remote-credential-guard/</link>
+      <link>https://technologify.net/posts/draft/remote-credential-guard/</link>
       <pubDate>Sat, 19 Mar 2022 00:27:04 +1100</pubDate>
       
-      <guid>https://technologify.net/posts/remote-credential-guard/</guid>
+      <guid>https://technologify.net/posts/draft/remote-credential-guard/</guid>
       <description>Remote Credential Guard</description>
     </item>
     
     <item>
       <title>AD Password Audit</title>
-      <link>https://technologify.net/posts/ad-password-audit/</link>
+      <link>https://technologify.net/posts/draft/ad-password-audit/</link>
       <pubDate>Fri, 21 Jan 2022 21:48:57 +1100</pubDate>
       
-      <guid>https://technologify.net/posts/ad-password-audit/</guid>
+      <guid>https://technologify.net/posts/draft/ad-password-audit/</guid>
       <description>Ad Password Audit</description>
     </item>
     
     <item>
       <title>Creating a Honeypot with T-Pot</title>
-      <link>https://technologify.net/posts/tpot/</link>
+      <link>https://technologify.net/posts/draft/tpot/</link>
       <pubDate>Sun, 16 Jan 2022 13:56:28 +1100</pubDate>
       
-      <guid>https://technologify.net/posts/tpot/</guid>
+      <guid>https://technologify.net/posts/draft/tpot/</guid>
       <description>Tpot</description>
     </item>
     
