@@ -35,7 +35,7 @@ Let's say you need to find out which AD users are in an OU but not in an Azure A
 
 ```kql
 IdentityInfo
-| where OnPremisesDistinguishedName endswith_cs "OU=COMPANY,OU=STORES,OU=ICSH,DC=ICSH,DC=LOCAL"
+| where OnPremisesDistinguishedName endswith_cs "OU=COMPANY,OU=STORES,OU=CONTOSO,DC=LOCAL"
 | where GroupMembership !contains "Company Store Users"
 ```
 
@@ -46,7 +46,7 @@ Identify users logging in from non company devices. Define company device as Azu
 union AADNonInteractiveUserSignInLogs,SigninLogs
 | where Identity !startswith_cs "Franchise Store"
 | where AppDisplayName != "Outlook Mobile"
-| where IPAddress !in ("101.97.60.198","183.177.50.50") // equinix new ip
+| where IPAddress !in (<IP 1>,<IP 2>) // equinix new ip
 | where DeviceDetail_string !contains "Azure AD"
 | where DeviceDetail_dynamic !contains "Azure AD"
 | where DeviceDetail_string !contains_cs "Ios"
