@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>KQL on JDTech</title>
+    <link>https://technologify.net/tags/kql/</link>
+    <description>Recent content in KQL on JDTech</description>
+    <image>
+      <title>JDTech</title>
+      <url>https://technologify.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://technologify.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 15 Mar 2022 19:35:07 +1100</lastBuildDate><atom:link href="https://technologify.net/tags/kql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SentinelQueriesKQL</title>
+      <link>https://technologify.net/posts/security/sentinelquerieskql/</link>
+      <pubDate>Tue, 15 Mar 2022 19:35:07 +1100</pubDate>
+      
+      <guid>https://technologify.net/posts/security/sentinelquerieskql/</guid>
+      <description>SentinelQueriesKQL</description>
+    </item>
+    
+  </channel>
+</rss>
