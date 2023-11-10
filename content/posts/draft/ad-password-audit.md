@@ -33,6 +33,7 @@ Accounts with bad passwords, especially accounts with privileged access are the 
 So, what can we as IT professionals do to reduce bad passwords and mitigate their impact?
 
 - MFA if possible. Yes, it’s been repeated to the ground but only [57% percent of organisations use MFA](https://www.bleepingcomputer.com/news/security/57-percent-of-businesses-use-multi-factor-auth-mfa-says-lastpass/?swcfpc=1#:~:text=Approximately%2057%25%20of%20businesses%20around,on%20data%20from%2047%2C000%20orgs.).
+- Restrict work account access to managed devices.
 - Disable Legacy authentication.
 - Block or limit access to public facing web portals such as OWA, VPN portals and RDweb.
 - Impose rate limiting and lockout periods for incorrect authentication attempts.
