@@ -4,7 +4,7 @@ subtitle: ""
 description: "SentinelQueriesKQL"
 date: 2022-03-15T19:35:07+11:00
 lastmod: 2022-03-15T19:35:07+11:00
-draft: true
+draft: false
 
 author: "JD"
 authorLink: ""
