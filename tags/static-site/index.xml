@@ -14,10 +14,10 @@
     <lastBuildDate>Mon, 27 Dec 2021 22:41:38 +1100</lastBuildDate><atom:link href="https://technologify.net/tags/static-site/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo</title>
-      <link>https://technologify.net/posts/draft/hugo/</link>
+      <link>https://technologify.net/posts/security/hugo/</link>
       <pubDate>Mon, 27 Dec 2021 22:41:38 +1100</pubDate>
       
-      <guid>https://technologify.net/posts/draft/hugo/</guid>
+      <guid>https://technologify.net/posts/security/hugo/</guid>
       <description>Static sites with Hugo</description>
     </item>
     
