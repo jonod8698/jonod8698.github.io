@@ -27,16 +27,20 @@ comment:
 seo:
     images:
 ---
+
 ## Summary
+
 Egress filtering limits traffic leaving the network perimeter.
 
 Why? Egress filtering is good security architecture as it prevents computers on the network from sending unwanted traffic to the internet. Limiting the attack surface protects against low-skill opportunistic attacks while reducing the breath of things to monitor.
+
 - C2 communication
 - Exposing information to attackers - e.g. stealing NetNTLMv2 hashes by [coercing a client to authenticate to an attacker controlled SMB share](https://www.bleepingcomputer.com/news/security/zoom-lets-attackers-steal-windows-credentials-run-programs-via-unc-links/)
 
 Network traffic Analysis solutions such as [Elastiflow](https://www.elastiflow.com/) can provide data on ports/IPs being used.
 
 ## What to Block?
+
 A deny by default, allowlisting approach is ideal. Denylisting first is a "safer" transitory step.
 
 Here are some recommended ports to block:
@@ -65,6 +69,7 @@ Here are some recommended ports to block:
 *Try to block ports as well as Protocols.
 
 ## How to verify egress filtering?
+
 Do an nmap scan to allports.exposed from [BHIS](https://www.blackhillsinfosec.com/poking-holes-in-the-firewall-egress-testing-with-allports-exposed/)  or run the following script
 
 ```PowerShell
@@ -74,5 +79,6 @@ Do an nmap scan to allports.exposed from [BHIS](https://www.blackhillsinfosec.co
 Note: ISPs typically filter a TON of ports such as port 25.
 
 ## Resources
-https://sansorg.egnyte.com/dl/fyF6fGJ4lz
-https://insights.sei.cmu.edu/blog/best-practices-and-considerations-in-egress-filtering/
+
+- https://sansorg.egnyte.com/dl/fyF6fGJ4lz
+- https://insights.sei.cmu.edu/blog/best-practices-and-considerations-in-egress-filtering/
