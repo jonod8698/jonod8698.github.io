@@ -1,5 +1,5 @@
 baseURL: "https://technologify.net/"
-title: JDTech
+title: Jdsec
 paginate: 5
 theme: PaperMod
 
@@ -8,7 +8,7 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
-googleAnalytics: UA-123-4
+#googleAnalytics: UA-123-4
 
 minify:
   disableXML: true
@@ -16,7 +16,7 @@ minify:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: Jonathan's Blog
+  title: Jdsec
   description: "About me"
   keywords: [Blog, Portfolio, PaperMod]
   author: Me
@@ -40,12 +40,12 @@ params:
   hidemeta: false
   hideSummary: false
   showtoc: true
-  tocopen: true
+  tocopen: false
   disqusShortname: "technologify"
 
   assets:
     # disableHLJS: true # to disable highlight.js
-    # disableFingerprinting: true
+    disableFingerprinting: true
     favicon: "<link / abs url>"
     favicon16x16: "<link / abs url>"
     favicon32x32: "<link / abs url>"
@@ -74,7 +74,7 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "Jonathan's Blog"
+    Title: "Jdsec"
     Content: "Information Security"
 
 #  socialIcons:
