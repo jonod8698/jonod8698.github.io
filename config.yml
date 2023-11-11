@@ -75,7 +75,7 @@ params:
   # home-info mode
   homeInfoParams:
     Title: "Jonathan's Blog"
-    Content: Musings on Technology, Security, and Books.
+    Content: "Information Security"
 
 #  socialIcons:
 #    - name: twitter
