@@ -47,7 +47,7 @@ Don't follow the steps under **Running the Collector** to start Elastiflow yet.
 
 Follow [these steps](https://docs.elastiflow.com/docs/elastic_install_ubuntu) to set up an Elastic stack. I was able to get away with 8GB RAM and 2 vCPUs for a small 100 mbps connection.
 
-In addition tot the steps above:
+In addition to the steps above:
 
 - update `/etc/kibana/kibana.yml` with the correct IP addresses and certificate locations.
 - update `/etc/elasticsearch/elasticsearch.yml` with the correct IP addresses and certificate locations.
