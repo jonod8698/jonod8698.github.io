@@ -30,7 +30,7 @@ seo:
 
 ## Summary
 
-RCG protects admin credentials by ensuring they are not passed over the network to the target device.
+Remote Credential Guard (RCG) protects admin credentials by ensuring they are not passed over the network to a target device. RCG is particularly useful for administrators who need to remotely access and manage servers and other critical systems. By ensuring that credentials are not exposed during these remote sessions, it significantly reduces the risk of credential theft and lateral movement in the network.
 
 ## Details
 
