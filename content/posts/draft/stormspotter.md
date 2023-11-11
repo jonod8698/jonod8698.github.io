@@ -32,7 +32,7 @@ seo:
 
 [Stomspotter](https://github.com/Azure/Stormspotter) is an Azure Red Team tool to graph Azure and Azure AD objects.
 
-By mapping out relationships between objects, Stormspotter visualises the attack paths between Azure objects.
+By mapping out relationships between objects, Stormspotter visualises attack paths between Azure objects.
 
 Stormspotter currently only [supports Neo4j 3.x.x](https://github.com/Azure/Stormspotter/issues/49).
 

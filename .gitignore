@@ -16,7 +16,7 @@ vendor/*/
 *.bench
 *.debug
 coverage*.out
-
+hugo_build.lock
 dock.sh
 
 GoBuilds
