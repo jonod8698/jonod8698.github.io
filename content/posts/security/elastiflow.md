@@ -80,12 +80,12 @@ For step two:
 - `set system flow-accounting netflow server <server IP> port 9995`
 - `set system flow-accounting netflow version 9`
 - `set system flow-accounting netflow sampling-rate 10`
-- `set system flow-accounting syslog-facility daemon`< not sure if this is required
+- `set system flow-accounting syslog-facility daemon`
 - `commit`
 
 To reverse any commands, substitute `set` with `delete`.
 
-To show existing configuration, substitue `set` with `show`
+To show existing configuration, substitute `set` with `show`
 
 To check if NetFlow is being exported, run `sudo tcpdump -i any -n port 9995` on the USG or the Elastiflow box.
 
