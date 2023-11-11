@@ -27,6 +27,8 @@ comment:
 seo:
     images:
 ---
+![](/images/2023-11-11-17-33-35.png)
+
 [Elastiflow](https://www.elastiflow.com/) is a high performance flow collector that provides unparalleled network observability. The community edition is free so it's perfect for homelabbers.
 
 [Why use Elastiflow?](https://bidhankhatri.com.np/elk/network-traffic-analysis-using-elastiflow/)
