@@ -1,5 +1,5 @@
 ---
-title: "Wpad Security"
+title: "WPAD Security Considerations"
 subtitle: ""
 description: "Wpad Security"
 date: 2022-03-20T16:29:31+11:00
