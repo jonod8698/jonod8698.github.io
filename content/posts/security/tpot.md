@@ -32,6 +32,8 @@ seo:
 
 [Tpotce](https://github.com/telekom-security/tpotce) is an all-in-one honeypot platform with a collection of honeypots and tools for monitoring them.
 
+![](/images/2023-11-11-19-16-46.png)
+
 ## Requirements
 
 - 8GB RAM
