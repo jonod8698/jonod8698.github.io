@@ -50,7 +50,7 @@ hugo new site <my-site>
 ```
 
 ### Install a theme
-I like the simplicity and aesthetics of the [DoIT](https://hugodoit.pages.dev/) theme.
+I like the simplicity and aesthetics of the [PaperMod Theme](https://github.com/adityatelange/hugo-PaperMod) theme.
 
 Create a git repository and make the CodeIT repo a submodule of the side directory.
 ```powershell
