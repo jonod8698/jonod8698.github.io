@@ -9,89 +9,72 @@
       <url>https://technologify.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://technologify.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 20 Mar 2022 16:29:31 +1100</lastBuildDate><atom:link href="https://technologify.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Mar 2022 16:29:31 +1100</lastBuildDate>
+    <atom:link href="https://technologify.net/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Network</title>
       <link>https://technologify.net/tags/network/</link>
       <pubDate>Sun, 20 Mar 2022 16:29:31 +1100</pubDate>
-      
       <guid>https://technologify.net/tags/network/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Kerberos</title>
       <link>https://technologify.net/tags/kerberos/</link>
       <pubDate>Sat, 19 Mar 2022 00:27:04 +1100</pubDate>
-      
       <guid>https://technologify.net/tags/kerberos/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Remote Credential Guard</title>
       <link>https://technologify.net/tags/remote-credential-guard/</link>
       <pubDate>Sat, 19 Mar 2022 00:27:04 +1100</pubDate>
-      
       <guid>https://technologify.net/tags/remote-credential-guard/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>KQL</title>
       <link>https://technologify.net/tags/kql/</link>
       <pubDate>Tue, 15 Mar 2022 19:35:07 +1100</pubDate>
-      
       <guid>https://technologify.net/tags/kql/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>AD</title>
       <link>https://technologify.net/tags/ad/</link>
       <pubDate>Fri, 21 Jan 2022 21:48:57 +1100</pubDate>
-      
       <guid>https://technologify.net/tags/ad/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Identity</title>
       <link>https://technologify.net/tags/identity/</link>
       <pubDate>Fri, 21 Jan 2022 21:48:57 +1100</pubDate>
-      
       <guid>https://technologify.net/tags/identity/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Honeypot</title>
       <link>https://technologify.net/tags/honeypot/</link>
       <pubDate>Sun, 16 Jan 2022 13:56:28 +1100</pubDate>
-      
       <guid>https://technologify.net/tags/honeypot/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>knowledge-management</title>
+      <title>Knowledge-Management</title>
       <link>https://technologify.net/tags/knowledge-management/</link>
       <pubDate>Mon, 27 Dec 2021 22:41:38 +1100</pubDate>
-      
       <guid>https://technologify.net/tags/knowledge-management/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>static-site</title>
+      <title>Static-Site</title>
       <link>https://technologify.net/tags/static-site/</link>
       <pubDate>Mon, 27 Dec 2021 22:41:38 +1100</pubDate>
-      
       <guid>https://technologify.net/tags/static-site/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

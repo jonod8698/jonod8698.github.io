@@ -9,17 +9,16 @@
       <url>https://technologify.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://technologify.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 19 Mar 2022 00:27:04 +1100</lastBuildDate><atom:link href="https://technologify.net/tags/kerberos/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 19 Mar 2022 00:27:04 +1100</lastBuildDate>
+    <atom:link href="https://technologify.net/tags/kerberos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Remote Credential Guard</title>
       <link>https://technologify.net/posts/security/remote-credential-guard/</link>
       <pubDate>Sat, 19 Mar 2022 00:27:04 +1100</pubDate>
-      
       <guid>https://technologify.net/posts/security/remote-credential-guard/</guid>
       <description>Remote Credential Guard</description>
     </item>
-    
   </channel>
 </rss>
