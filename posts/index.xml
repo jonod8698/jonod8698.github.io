@@ -11,8 +11,18 @@
     </image>
     <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 29 May 2022 00:52:51 +1000</lastBuildDate>
+    <lastBuildDate>Fri, 24 Jun 2022 21:36:19 +1000</lastBuildDate>
     <atom:link href="https://technologify.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HSTS and Preloading</title>
+      <link>https://technologify.net/posts/draft/hsts/</link>
+      <pubDate>Fri, 24 Jun 2022 21:36:19 +1000</pubDate>
+      <guid>https://technologify.net/posts/draft/hsts/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.chromium.org/hsts/&#34;&gt;HSTS&lt;/a&gt; directs the browser to use HTTPS for certain domains (optionally subdomains). This mitigates some MitM attacks by upgrading HTTP connections to HTTPS.&lt;/p&gt;
+&lt;h2 id=&#34;hsts-preloading&#34;&gt;HSTS Preloading&lt;/h2&gt;
+&lt;p&gt;The native implementation of HSTS communicates the HSTS policy to the browser via an HTTP response header &lt;code&gt;Strict-Transport-Security: max-age=31536000; includeSubDomains&lt;/code&gt;. HSTS requires a user to visit a website once before HSTS protection is cached.&lt;/p&gt;
+&lt;p&gt;But what if HTTP is used on the first visit or a user clears their cache frequently? An attacker can still redirect the user to a malicious site by altering the response.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Elastiflow</title>
       <link>https://technologify.net/posts/security/elastiflow/</link>
