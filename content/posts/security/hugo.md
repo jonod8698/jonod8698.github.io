@@ -13,7 +13,7 @@ categories: [other]
 featuredImage: ""
 featuredImagePreview: ""
 
-hiddenFromHomePage: false
+hiddenFromHomePage: true
 hiddenFromSearch: false
 
 toc:
