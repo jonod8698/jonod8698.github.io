@@ -30,13 +30,13 @@ seo:
 
 ## Exakat
 ```
-docker run -v C:\Users\jduan\exakat:/usr/src/exakat/projects --rm exakat/exakat exakat init -p Godfreys-php
-docker run -v C:\Users\jduan\exakat:/usr/src/exakat/projects --rm exakat/exakat exakat project -p Godfreys-php
+docker run -v C:\Users\user\exakat:/usr/src/exakat/projects --rm exakat/exakat exakat init -p contoso-php
+docker run -v C:\Users\user\exakat:/usr/src/exakat/projects --rm exakat/exakat exakat project -p contoso-php
 ```
 
 # Phpstan
 Link docker image to local windows system folder. Execute in local windows system powershell.
 ```
 docker pull ghcr.io/phpstan/phpstan
-docker run --rm -v C:\Users\jduan\phpstan\code:/app ghcr.io/phpstan/phpstan analyse bin/
+docker run --rm -v C:\Users\user\phpstan\code:/app ghcr.io/phpstan/phpstan analyse bin/
 ```

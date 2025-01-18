@@ -39,7 +39,7 @@ $currentDate = Get-Date
 $endDate = $currentDate.AddYears(1)
 $notAfter = $endDate.AddYears(1)
 $pwd = ""
-$thumb = (New-SelfSignedCertificate -CertStoreLocation cert:\localmachine\my -DnsName int.godfreys.com.au -KeyExportPolicy Exportable -Provider "Microsoft Enhanced RSA and AES Cryptographic Provider" -NotAfter $notAfter).Thumbprint
+$thumb = (New-SelfSignedCertificate -CertStoreLocation cert:\localmachine\my -DnsName contoso.com -KeyExportPolicy Exportable -Provider "Microsoft Enhanced RSA and AES Cryptographic Provider" -NotAfter $notAfter).Thumbprint
 $pwd = ConvertTo-SecureString -String $pwd -Force -AsPlainText
 Export-PfxCertificate -cert "cert:\localmachine\my\$thumb" -FilePath c:\contoso.pfx -Password $pwd
 
