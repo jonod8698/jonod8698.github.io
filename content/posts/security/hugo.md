@@ -35,7 +35,7 @@ I'm sick of maintaining Wordpress. I've finally decided to switch to a static si
 
 ### Install Hugo
 
-I'm using the [DoIT](https://github.com/HEIGE-PCloud/DoIt.git) Hugo theme. This requires [Hugo Extended](https://community.chocolatey.org/packages/hugo-extended).
+I'm using the [PaperMod Theme](https://github.com/adityatelange/hugo-PaperMod) Hugo theme. This requires [Hugo Extended](https://community.chocolatey.org/packages/hugo-extended).
 
 **Installation via Chocolatey**
 ```powershell
@@ -56,7 +56,7 @@ Create a git repository and make the CodeIT repo a submodule of the side directo
 ```powershell
 cd <my-site>
 git init
-git submodule add https://github.com/HEIGE-PCloud/DoIt.git themes/DoIT
+git submodule add https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod
 ```
 
 > I must be doing something wrong. Sometimes, on new computers, the themes module doesn't load properly. In this case, I run the following commands. (At some point I need to read the docs properly).
@@ -64,7 +64,7 @@ git submodule add https://github.com/HEIGE-PCloud/DoIt.git themes/DoIT
 ```powershell
 git rm --cached themes/PaperMod
 # remove contents of .gitmodules
-rm -force .git/modules/themes
+rm -rf .git/modules/themes
 git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod
 ```
 
